@@ -1,0 +1,2203 @@
+/* =========================
+   1. CÀI ĐẶT CHUNG
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111111;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* =========================
+   2. THANH ĐIỀU HƯỚNG
+========================= */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    padding: 0 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+.logo {
+    color: #e3c58a;
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    white-space: nowrap;
+}
+
+/* Menu trên máy tính */
+.top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+}
+
+.top-nav a {
+    color: #ffffff;
+    font-size: 13px;
+    white-space: nowrap;
+    transition: color 0.3s;
+}
+
+.top-nav a:hover {
+    color: #e3c58a;
+}
+
+/* Nút ba gạch trên điện thoại */
+.menu-btn {
+    display: none;
+    border: none;
+    background: transparent;
+    color: #ffffff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* =========================
+   3. BANNER TRANG CHỦ
+========================= */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    height: 100svh;
+    min-height: 550px;
+    overflow: hidden;
+}
+
+.hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(65%);
+}
+
+/* Lớp phủ giúp chữ dễ đọc */
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.25),
+        transparent 40%,
+        rgba(0, 0, 0, 0.75)
+    );
+
+    pointer-events: none;
+}
+
+.hero-content {
+    position: absolute;
+    z-index: 1;
+
+    left: 20px;
+    right: 20px;
+    bottom: 12%;
+
+    text-align: center;
+}
+
+.hero-content h1 {
+    margin-bottom: 15px;
+
+    font-size: clamp(30px, 5vw, 58px);
+    font-weight: bold;
+    letter-spacing: 3px;
+    line-height: 1.3;
+}
+
+.hero-content p {
+    margin-bottom: 28px;
+
+    color: #eeeeee;
+    font-size: 16px;
+}
+
+.hero-content a {
+    display: inline-block;
+    padding: 12px 30px;
+
+    border: 1px solid #ffffff;
+    color: #ffffff;
+
+    font-size: 12px;
+    letter-spacing: 2px;
+
+    transition: all 0.3s;
+}
+
+.hero-content a:hover {
+    background: #e3c58a;
+    border-color: #e3c58a;
+    color: #111111;
+}
+
+/* =========================
+   4. PHẦN GIỚI THIỆU
+========================= */
+.intro {
+    padding: 85px 25px;
+    text-align: center;
+    background: #171717;
+}
+
+.intro h2,
+.places h2 {
+    margin-bottom: 25px;
+
+    font-size: 25px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+
+.intro p {
+    max-width: 750px;
+    margin: 0 auto 25px;
+
+    color: #cccccc;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.intro a {
+    display: inline-block;
+    color: #e3c58a;
+    transition: color 0.3s;
+}
+
+.intro a:hover {
+    color: #ffffff;
+}
+
+/* =========================
+   5. ĐỊA ĐIỂM NỔI BẬT
+========================= */
+.places {
+    padding: 70px 20px;
+    background: #101010;
+}
+
+.places h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.place {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto 45px;
+}
+
+.place img {
+    display: block;
+
+    width: 100%;
+    height: 260px;
+
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.place h3 {
+    margin: 18px 0 10px;
+    font-size: 21px;
+}
+
+.place a {
+    display: inline-block;
+    color: #e3c58a;
+    font-size: 14px;
+}
+
+.place a:hover {
+    color: #ffffff;
+}
+
+/* =========================
+   6. MENU TRÊN ĐIỆN THOẠI
+========================= */
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    width: min(85%, 360px);
+    height: 100vh;
+    height: 100svh;
+    overflow-y: auto;
+
+    padding: 25px;
+    background: #171717;
+
+    z-index: 2000;
+
+    display: flex;
+    flex-direction: column;
+
+    transform: translateX(100%);
+    visibility: hidden;
+
+    transition:
+        transform 0.35s ease,
+        visibility 0.35s ease;
+}
+
+/* Khi mở menu */
+.menu.active {
+    transform: translateX(0);
+    visibility: visible;
+}
+
+/* Nút đóng menu */
+.close-btn {
+    align-self: flex-end;
+    margin-bottom: 25px;
+
+    border: none;
+    background: transparent;
+    color: #ffffff;
+
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Các liên kết trong menu */
+.menu a {
+    display: block;
+    padding: 16px 0;
+
+    border-bottom: 1px solid #333333;
+
+    color: #ffffff;
+    font-size: 16px;
+
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #e3c58a;
+}
+
+/* =========================
+   7. ĐIỆN THOẠI
+========================= */
+@media screen and (max-width: 767px) {
+    .header {
+        height: 60px;
+        padding: 0 18px;
+    }
+
+    .logo {
+        font-size: 19px;
+    }
+
+    /* Ẩn thanh điều hướng ngang */
+    .top-nav {
+        display: none;
+    }
+
+    /* Hiện nút menu */
+    .menu-btn {
+        display: block;
+    }
+
+    .hero-content {
+        bottom: 15%;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .intro {
+        padding: 60px 20px;
+    }
+
+    .intro h2,
+    .places h2 {
+        font-size: 21px;
+    }
+
+    .places {
+        padding: 55px 18px;
+    }
+
+    .place img {
+        height: 230px;
+    }
+
+    .place h3 {
+        font-size: 19px;
+    }
+}
+
+/* =========================
+   8. MÁY TÍNH VÀ TABLET LỚN
+========================= */
+@media screen and (min-width: 768px) {
+    .menu-btn {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .intro {
+        padding: 100px 15%;
+    }
+
+    .places {
+        padding: 80px 8%;
+    }
+
+    .place img {
+        height: 400px;
+    }
+}
+
+/* =========================
+   9. MÀN HÌNH MÁY TÍNH NHỎ
+========================= */
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+    .header {
+        padding: 0 15px;
+        gap: 12px;
+    }
+
+    .top-nav {
+        gap: 12px;
+    }
+
+    .top-nav a {
+        font-size: 11px;
+    }
+
+    .logo {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+}
+
+/* =========================
+   TRANG GIỚI THIỆU
+========================= */
+
+.page-banner {
+    position: relative;
+    width: 100%;
+    height: 55vh;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+.page-banner img {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    filter: brightness(45%);
+}
+
+.page-banner::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.8)
+    );
+}
+
+.page-banner-content {
+    position: absolute;
+
+    left: 20px;
+    right: 20px;
+    bottom: 15%;
+
+    z-index: 1;
+
+    text-align: center;
+}
+
+.page-banner-content p {
+    margin-bottom: 12px;
+
+    color: #e3c58a;
+
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.page-banner-content h1 {
+    font-size: clamp(30px, 6vw, 55px);
+    letter-spacing: 3px;
+}
+
+
+/* =========================
+   PHẦN NỘI DUNG
+========================= */
+
+.about-section {
+    padding: 80px 25px;
+
+    background: #171717;
+}
+
+.about-dark {
+    background: #101010;
+}
+
+.about-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.section-label {
+    margin-bottom: 15px;
+
+    color: #e3c58a;
+
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.about-content h2 {
+    margin-bottom: 25px;
+
+    font-size: 28px;
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+
+.about-content p:not(.section-label) {
+    margin-bottom: 20px;
+
+    color: #cccccc;
+
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+
+/* =========================
+   ĐỊA ĐIỂM TRONG GIỚI THIỆU
+========================= */
+
+.about-places {
+    padding: 80px 20px;
+
+    background: #151515;
+}
+
+.about-title {
+    max-width: 850px;
+    margin: 0 auto 45px;
+}
+
+.about-title h2 {
+    font-size: 28px;
+    line-height: 1.4;
+}
+
+.about-place-list {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.about-place {
+    margin-bottom: 55px;
+
+    background: #1d1d1d;
+}
+
+.about-place img {
+    display: block;
+
+    width: 100%;
+    height: 280px;
+
+    object-fit: cover;
+}
+
+.about-place-content {
+    padding: 25px;
+}
+
+.about-place-content h3 {
+    margin-bottom: 15px;
+
+    font-size: 21px;
+}
+
+.about-place-content p {
+    margin-bottom: 18px;
+
+    color: #cccccc;
+
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.about-place-content a {
+    color: #e3c58a;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   GIÁ TRỊ VĂN HÓA
+========================= */
+
+.about-value {
+    background: #111111;
+}
+
+
+/* =========================
+   NÚT QUAY LẠI
+========================= */
+
+.back-home {
+    padding: 55px 20px;
+
+    text-align: center;
+
+    background: #101010;
+}
+
+.back-home a {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    border: 1px solid #e3c58a;
+
+    color: #e3c58a;
+
+    font-size: 12px;
+    letter-spacing: 1px;
+
+    transition: 0.3s;
+}
+
+.back-home a:hover {
+    background: #e3c58a;
+    color: #111111;
+}
+
+
+/* =========================
+   TABLET / DESKTOP
+========================= */
+
+@media screen and (min-width: 768px) {
+
+    .page-banner {
+        height: 60vh;
+        min-height: 500px;
+    }
+
+    .about-section {
+        padding: 110px 15%;
+    }
+
+    .about-content h2 {
+        font-size: 35px;
+    }
+
+    .about-places {
+        padding: 110px 8%;
+    }
+
+    .about-place {
+        display: flex;
+
+        min-height: 300px;
+    }
+
+    .about-place img {
+        width: 50%;
+        height: auto;
+    }
+
+    .about-place-content {
+        width: 50%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        padding: 45px;
+    }
+
+    .about-place-content h3 {
+        font-size: 25px;
+    }
+}
+
+
+/* =========================
+   ĐIỆN THOẠI
+========================= */
+
+@media screen and (max-width: 767px) {
+
+    .page-banner {
+        height: 50vh;
+        min-height: 350px;
+    }
+
+    .page-banner-content {
+        bottom: 15%;
+    }
+
+    .page-banner-content h1 {
+        font-size: 29px;
+        letter-spacing: 2px;
+    }
+
+    .about-section {
+        padding: 65px 20px;
+    }
+
+    .about-content h2 {
+        font-size: 25px;
+    }
+
+    .about-places {
+        padding: 65px 18px;
+    }
+
+    .about-title h2 {
+        font-size: 25px;
+    }
+
+    .about-place img {
+        height: 230px;
+    }
+
+    .about-place-content {
+        padding: 22px;
+    }
+
+    .about-place-content h3 {
+        font-size: 20px;
+    }
+}
+/* =========================
+   TRANG LỊCH SỬ
+========================= */
+
+.history-banner {
+    position: relative;
+
+    width: 100%;
+    height: 55vh;
+    min-height: 400px;
+
+    overflow: hidden;
+}
+
+.history-banner img {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    filter: brightness(40%);
+}
+
+.history-banner::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.85)
+    );
+}
+
+.history-banner-content {
+    position: absolute;
+
+    z-index: 1;
+
+    left: 20px;
+    right: 20px;
+    bottom: 15%;
+
+    text-align: center;
+}
+
+.history-banner-content p {
+    margin-bottom: 12px;
+
+    color: #e3c58a;
+
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.history-banner-content h1 {
+    font-size: clamp(30px, 6vw, 55px);
+
+    letter-spacing: 3px;
+}
+
+
+/* =========================
+   NỘI DUNG LỊCH SỬ
+========================= */
+
+.history-intro,
+.history-period,
+.history-today {
+    padding: 80px 25px;
+
+    background: #171717;
+}
+
+.history-period.dark {
+    background: #101010;
+}
+
+.history-content {
+    max-width: 850px;
+
+    margin: 0 auto;
+}
+
+.history-label {
+    margin-bottom: 15px;
+
+    color: #e3c58a;
+
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.history-content h2 {
+    margin-bottom: 25px;
+
+    font-size: 30px;
+
+    line-height: 1.4;
+
+    letter-spacing: 1px;
+}
+
+.history-content p:not(.history-label) {
+    margin-bottom: 20px;
+
+    color: #cccccc;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+}
+
+
+/* =========================
+   DÒNG THỜI GIAN
+========================= */
+
+.timeline-section {
+    padding: 80px 20px;
+
+    background: #151515;
+}
+
+.timeline-title {
+    max-width: 850px;
+
+    margin: 0 auto 50px;
+}
+
+.timeline-title h2 {
+    font-size: 30px;
+
+    line-height: 1.4;
+}
+
+.timeline {
+    position: relative;
+
+    max-width: 850px;
+
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: "";
+
+    position: absolute;
+
+    left: 29px;
+    top: 0;
+    bottom: 0;
+
+    width: 1px;
+
+    background: #555555;
+}
+
+.timeline-item {
+    position: relative;
+
+    display: flex;
+
+    gap: 25px;
+
+    margin-bottom: 45px;
+}
+
+.timeline-year {
+    position: relative;
+
+    z-index: 1;
+
+    flex-shrink: 0;
+
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #e3c58a;
+
+    border-radius: 50%;
+
+    background: #151515;
+
+    color: #e3c58a;
+
+    font-size: 12px;
+
+    text-align: center;
+}
+
+.timeline-text {
+    padding-top: 5px;
+}
+
+.timeline-text h3 {
+    margin-bottom: 10px;
+
+    font-size: 19px;
+}
+
+.timeline-text p {
+    color: #cccccc;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   HOA LƯ NGÀY NAY
+========================= */
+
+.history-today {
+    background: #111111;
+}
+
+
+/* =========================
+   TABLET / DESKTOP
+========================= */
+
+@media screen and (min-width: 768px) {
+
+    .history-banner {
+        height: 60vh;
+
+        min-height: 500px;
+    }
+
+    .history-intro,
+    .history-period,
+    .history-today {
+        padding: 110px 15%;
+    }
+
+    .history-content h2 {
+        font-size: 36px;
+    }
+
+    .timeline-section {
+        padding: 110px 8%;
+    }
+
+}
+
+
+/* =========================
+   ĐIỆN THOẠI
+========================= */
+
+@media screen and (max-width: 767px) {
+
+    .history-banner {
+        height: 50vh;
+
+        min-height: 350px;
+    }
+
+    .history-banner-content {
+        bottom: 15%;
+    }
+
+    .history-banner-content h1 {
+        font-size: 29px;
+
+        letter-spacing: 2px;
+    }
+
+    .history-intro,
+    .history-period,
+    .history-today {
+        padding: 65px 20px;
+    }
+
+    .history-content h2 {
+        font-size: 25px;
+    }
+
+    .timeline-section {
+        padding: 65px 18px;
+    }
+
+    .timeline-title h2 {
+        font-size: 25px;
+    }
+
+    .timeline-item {
+        gap: 18px;
+    }
+
+    .timeline-year {
+        width: 55px;
+        height: 55px;
+
+        font-size: 11px;
+    }
+
+    .timeline::before {
+        left: 27px;
+    }
+
+    .timeline-text h3 {
+        font-size: 18px;
+    }
+
+}
+/* =========================
+   TRANG ĐỊA ĐIỂM
+========================= */
+
+.place-banner {
+    position: relative;
+    width: 100%;
+    height: 55vh;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+.place-banner img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(40%);
+}
+
+.place-banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.15),
+        rgba(0, 0, 0, 0.9)
+    );
+}
+
+.place-banner-content {
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+    right: 20px;
+    bottom: 15%;
+    text-align: center;
+}
+
+.place-banner-content p {
+    margin-bottom: 12px;
+    color: #e3c58a;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.place-banner-content h1 {
+    font-size: clamp(30px, 6vw, 55px);
+    letter-spacing: 3px;
+}
+
+
+/* =========================
+   GIỚI THIỆU
+========================= */
+
+.place-intro {
+    padding: 80px 25px;
+    background: #171717;
+}
+
+.place-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.place-label {
+    margin-bottom: 15px;
+    color: #e3c58a;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.place-content h2 {
+    margin-bottom: 25px;
+    font-size: 30px;
+    line-height: 1.4;
+}
+
+.place-content p:not(.place-label) {
+    margin-bottom: 20px;
+    color: #cccccc;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+
+/* =========================
+   DANH SÁCH ĐỊA ĐIỂM
+========================= */
+
+.place-list-section {
+    padding: 80px 20px;
+    background: #101010;
+}
+
+.place-list-title {
+    max-width: 1000px;
+    margin: 0 auto 45px;
+}
+
+.place-list-title h2 {
+    font-size: 30px;
+    line-height: 1.4;
+}
+
+
+/* =========================
+   GRID
+========================= */
+
+.place-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.place-card {
+    overflow: hidden;
+
+    background: #191919;
+
+    border: 1px solid #292929;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.place-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #e3c58a;
+}
+
+
+/* =========================
+   ẢNH CARD
+========================= */
+
+.place-card-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.place-card-image img {
+    display: block;
+
+    width: 100%;
+    height: 250px;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.place-card:hover .place-card-image img {
+    transform: scale(1.05);
+}
+
+
+/* SỐ THỨ TỰ */
+
+.place-card-image span {
+    position: absolute;
+
+    right: 15px;
+    bottom: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 45px;
+    height: 45px;
+
+    border: 1px solid #e3c58a;
+    border-radius: 50%;
+
+    background: rgba(0, 0, 0, 0.75);
+
+    color: #e3c58a;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   NỘI DUNG CARD
+========================= */
+
+.place-card-content {
+    padding: 25px;
+}
+
+.place-number {
+    margin-bottom: 10px;
+
+    color: #e3c58a;
+
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.place-card-content h3 {
+    margin-bottom: 15px;
+
+    font-size: 21px;
+    line-height: 1.4;
+}
+
+.place-card-content p:not(.place-number) {
+    margin-bottom: 22px;
+
+    color: #bbbbbb;
+
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   NÚT XEM CHI TIẾT
+========================= */
+
+.place-card-content a {
+    display: inline-block;
+
+    padding-bottom: 5px;
+
+    color: #e3c58a;
+
+    font-size: 13px;
+
+    border-bottom: 1px solid transparent;
+
+    transition:
+        border-color 0.3s ease,
+        color 0.3s ease;
+}
+
+.place-card-content a:hover {
+    color: #ffffff;
+
+    border-bottom-color: #e3c58a;
+}
+
+
+/* =========================
+   QUAY LẠI
+========================= */
+
+.back-home {
+    padding: 70px 20px;
+
+    text-align: center;
+
+    background: #171717;
+}
+
+.back-home a {
+    color: #e3c58a;
+
+    font-size: 13px;
+    letter-spacing: 1px;
+
+    transition: color 0.3s ease;
+}
+
+.back-home a:hover {
+    color: #ffffff;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media screen and (min-width: 600px) {
+
+    .place-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media screen and (min-width: 768px) {
+
+    .place-banner {
+        height: 60vh;
+        min-height: 500px;
+    }
+
+
+    .place-intro {
+        padding: 110px 15%;
+    }
+
+    .place-content h2 {
+        font-size: 36px;
+    }
+
+
+    .place-list-section {
+        padding: 110px 8%;
+    }
+
+    .place-list-title h2 {
+        font-size: 36px;
+    }
+
+
+    .place-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 35px;
+    }
+
+
+    .place-card-image img {
+        height: 280px;
+    }
+
+}
+
+
+/* =========================
+   ĐIỆN THOẠI
+========================= */
+
+@media screen and (max-width: 767px) {
+
+    .place-banner {
+        height: 50vh;
+        min-height: 350px;
+    }
+
+
+    .place-banner-content {
+        bottom: 15%;
+    }
+
+    .place-banner-content h1 {
+        font-size: 29px;
+        letter-spacing: 2px;
+    }
+
+
+    .place-intro {
+        padding: 65px 20px;
+    }
+
+    .place-content h2 {
+        font-size: 25px;
+    }
+
+
+    .place-list-section {
+        padding: 65px 18px;
+    }
+
+    .place-list-title h2 {
+        font-size: 25px;
+    }
+
+
+    .place-card-image img {
+        height: 230px;
+    }
+
+
+    .place-card-content {
+        padding: 22px;
+    }
+
+    .place-card-content h3 {
+        font-size: 20px;
+    }
+
+
+    .back-home {
+        padding: 60px 20px;
+    }
+
+}
+/* ========================================
+   TRANG CHI TIẾT ĐỊA ĐIỂM
+======================================== */
+
+.detail-hero {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    min-height: 500px;
+    overflow: hidden;
+    background: #101010;
+}
+
+.detail-hero > img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(55%);
+}
+
+.detail-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.15),
+        rgba(0, 0, 0, 0.3) 40%,
+        rgba(0, 0, 0, 0.92)
+    );
+}
+
+.detail-hero-content {
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+    right: 20px;
+    bottom: 12%;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.detail-eyebrow,
+.detail-section-label {
+    color: #e3c58a;
+    font-size: 12px;
+    letter-spacing: 3px;
+    line-height: 1.8;
+}
+
+.detail-hero-content h1 {
+    margin: 22px 0;
+    font-size: clamp(30px, 5vw, 58px);
+    line-height: 1.3;
+    letter-spacing: 2px;
+}
+
+.detail-hero-subtitle {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #dddddd;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.detail-discover {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 14px 24px;
+    border: 1px solid #e3c58a;
+    color: #e3c58a;
+    font-size: 11px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.detail-discover:hover {
+    background: #e3c58a;
+    color: #111111;
+}
+
+
+/* ========================================
+   ĐƯỜNG DẪN
+======================================== */
+
+.detail-breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    padding: 22px 7%;
+    background: #111111;
+    border-bottom: 1px solid #292929;
+    color: #999999;
+    font-size: 12px;
+}
+
+.detail-breadcrumb a {
+    color: #cccccc;
+    transition: color 0.3s;
+}
+
+.detail-breadcrumb a:hover {
+    color: #e3c58a;
+}
+
+
+/* ========================================
+   GIỚI THIỆU DI TÍCH
+======================================== */
+
+.detail-introduction {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: #171717;
+}
+
+.detail-introduction-image {
+    position: relative;
+    min-height: 300px;
+    overflow: hidden;
+}
+
+.detail-introduction-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    object-fit: cover;
+}
+
+.detail-image-caption {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    padding: 10px 14px;
+    background: rgba(0, 0, 0, 0.75);
+    color: #e3c58a;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.detail-introduction-content {
+    padding: 60px 25px;
+}
+
+.detail-introduction-content h2,
+.detail-architecture-content h2,
+.detail-cultural-content h2 {
+    margin: 20px 0 25px;
+    font-size: clamp(26px, 3vw, 38px);
+    line-height: 1.45;
+}
+
+.detail-introduction-content p:not(.detail-section-label),
+.detail-architecture-content p:not(.detail-section-label),
+.detail-cultural-content p:not(.detail-section-label) {
+    margin-bottom: 20px;
+    color: #c5c5c5;
+    font-size: 15px;
+    line-height: 1.95;
+}
+
+
+/* ========================================
+   DÒNG THỜI GIAN LỊCH SỬ
+======================================== */
+
+.detail-history-section {
+    padding: 75px 25px;
+    background: #101010;
+}
+
+.detail-history-heading {
+    max-width: 750px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.detail-history-heading h2 {
+    margin: 20px 0;
+    font-size: clamp(26px, 3vw, 38px);
+    line-height: 1.45;
+}
+
+.detail-history-heading > p:last-child {
+    color: #bbbbbb;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.detail-timeline {
+    position: relative;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.detail-timeline::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    width: 1px;
+    background: #65563b;
+}
+
+.detail-timeline-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 0 0 40px 28px;
+}
+
+.detail-timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.detail-timeline-item::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #e3c58a;
+}
+
+.detail-timeline-year {
+    color: #e3c58a;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.detail-timeline-content h3 {
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.detail-timeline-content p {
+    color: #bbbbbb;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+
+/* ========================================
+   KIẾN TRÚC
+======================================== */
+
+.detail-architecture {
+    display: flex;
+    flex-direction: column;
+    background: #191919;
+}
+
+.detail-architecture-content {
+    padding: 65px 25px;
+}
+
+.detail-architecture-image {
+    min-height: 300px;
+    overflow: hidden;
+}
+
+.detail-architecture-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    object-fit: cover;
+}
+
+
+/* ========================================
+   GIÁ TRỊ VĂN HÓA
+======================================== */
+
+.detail-cultural-section {
+    padding: 75px 25px;
+    background: #111111;
+}
+
+.detail-cultural-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.detail-cultural-content h2 {
+    max-width: 650px;
+}
+
+
+/* ========================================
+   ĐIỀU HƯỚNG CUỐI TRANG
+======================================== */
+
+.detail-navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 35px 25px;
+    background: #191919;
+    border-top: 1px solid #292929;
+}
+
+.detail-back-link,
+.detail-next-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #e3c58a;
+}
+
+.detail-next-link {
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.detail-back-link > span:first-child,
+.detail-next-link > span:last-child {
+    font-size: 24px;
+    transition: transform 0.3s;
+}
+
+.detail-back-link:hover > span:first-child {
+    transform: translateX(-5px);
+}
+
+.detail-next-link:hover > span:last-child {
+    transform: translateX(5px);
+}
+
+.detail-back-link small,
+.detail-next-link small {
+    display: block;
+    margin-bottom: 7px;
+    color: #999999;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.detail-back-link strong,
+.detail-next-link strong {
+    display: block;
+    color: #eeeeee;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+
+/* ========================================
+   TABLET VÀ DESKTOP
+======================================== */
+
+@media screen and (min-width: 768px) {
+
+    .detail-hero {
+        height: 78vh;
+        min-height: 600px;
+    }
+
+    .detail-introduction {
+        grid-template-columns: 1fr 1fr;
+        align-items: stretch;
+    }
+
+    .detail-introduction-image img {
+        min-height: 600px;
+    }
+
+    .detail-introduction-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 75px 9%;
+    }
+
+    .detail-history-section {
+        padding: 110px 8%;
+    }
+
+    .detail-timeline-item {
+        grid-template-columns: 130px 1fr;
+        gap: 25px;
+        padding-left: 35px;
+    }
+
+    .detail-timeline::before {
+        left: 0;
+    }
+
+    .detail-timeline-item::before {
+        left: -5px;
+    }
+
+    .detail-architecture {
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .detail-architecture-content,
+    .detail-architecture-image {
+        width: 50%;
+    }
+
+    .detail-architecture-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 90px 8%;
+    }
+
+    .detail-architecture-image img {
+        min-height: 550px;
+    }
+
+    .detail-cultural-section {
+        padding: 110px 10%;
+    }
+
+    .detail-navigation {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px 8%;
+    }
+
+}
+
+
+/* ========================================
+   ĐIỆN THOẠI
+======================================== */
+
+@media screen and (max-width: 767px) {
+
+    .detail-hero {
+        height: 65vh;
+        min-height: 440px;
+    }
+
+    .detail-hero-content {
+        bottom: 10%;
+    }
+
+    .detail-eyebrow,
+    .detail-section-label {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .detail-hero-content h1 {
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+
+    .detail-hero-subtitle {
+        font-size: 13px;
+    }
+
+    .detail-breadcrumb {
+        padding: 18px 20px;
+        gap: 8px;
+        font-size: 11px;
+    }
+
+    .detail-introduction-content,
+    .detail-architecture-content {
+        padding: 55px 22px;
+    }
+
+    .detail-history-section,
+    .detail-cultural-section {
+        padding: 65px 22px;
+    }
+
+    .detail-history-heading {
+        margin-bottom: 40px;
+    }
+
+    .detail-timeline-item {
+        padding-bottom: 35px;
+    }
+
+    .detail-navigation {
+        padding: 30px 22px;
+    }
+
+}
+
+/* MENU CHỌN NGÔN NGỮ */
+.language-switcher {
+    position: relative;
+    display: inline-block;
+    margin-left: 15px;
+    z-index: 1000;
+}
+
+.language-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 12px;
+    color: #e5d4ad;
+    background: transparent;
+    border: 1px solid #76613c;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.language-button:hover {
+    background: #29291f;
+    border-color: #b58b45;
+}
+
+.language-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    width: 170px;
+    padding: 6px;
+    background: #20221d;
+    border: 1px solid #76613c;
+    border-radius: 7px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.language-menu.active {
+    display: block;
+}
+
+.language-menu button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    text-align: left;
+    color: #e5d4ad;
+    background: transparent;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.language-menu button:hover {
+    background: #39372b;
+    color: #fff;
+}
+
+
+/* =====================================
+   ẨN THANH GOOGLE TRANSLATE
+===================================== */
+
+iframe.goog-te-banner-frame,
+.goog-te-banner-frame,
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    max-height: 0 !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+html,
+body {
+    top: 0 !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+body.translated-ltr,
+body.translated-rtl {
+    top: 0 !important;
+}
+
+#google_translate_element {
+    position: absolute !important;
+    left: -9999px !important;
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden !important;
+}
+/* Chỉ ẩn thanh dịch phía trên */
+iframe.goog-te-banner-frame,
+.goog-te-banner-frame {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+}
+
+/* Xóa khoảng trống phía trên */
+html,
+body {
+    top: 0 !important;
+    margin-top: 0 !important;
+}
+
+/* Loại bỏ khoảng trống phía trên trang */
+html,
+body {
+    top: 0 !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+.voice-reader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 24px 6%;
+    background: #1b1b1b;
+    border-top: 1px solid #3b3325;
+    border-bottom: 1px solid #3b3325;
+}
+
+.voice-reader-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.voice-reader-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #e3c58a;
+    border-radius: 50%;
+    color: #e3c58a;
+    font-size: 24px;
+}
+
+.voice-reader-info h3 {
+    margin: 0 0 4px;
+    color: #e3c58a;
+    font-size: 17px;
+}
+
+.voice-reader-info p {
+    margin: 0;
+    color: #ccc;
+    font-size: 13px;
+}
+
+.voice-reader-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.voice-reader-controls button {
+    padding: 10px 14px;
+    border: 1px solid #e3c58a;
+    border-radius: 4px;
+    background: transparent;
+    color: #e3c58a;
+    cursor: pointer;
+}
+
+.voice-reader-controls button:hover {
+    background: #e3c58a;
+    color: #111;
+}
+
+@media (max-width: 600px) {
+    .voice-reader {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 22px 5%;
+    }
+
+    .voice-reader-controls {
+        width: 100%;
+    }
+
+    .voice-reader-controls button {
+        flex: 1;
+    }
+}
+/* ẨN POPUP GOOGLE TRANSLATE KHI CHẠM VÀO CHỮ */
+.goog-tooltip,
+.goog-te-balloon-frame,
+#goog-gt-tt {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+.goog-text-highlight {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+a,
+a:link,
+a:visited {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover,
+a:active {
+    color: #e3c58a;
+}
+
+/* Giữ nguyên màu logo */
+.logo,
+.logo:link,
+.logo:visited,
+.logo:hover,
+.logo:active {
+    color: #e3c58a;
+}
+
+/* Giữ màu các nút điều hướng đặc biệt */
+.back-home a:hover,
+.detail-back-link:hover,
+.detail-next-link:hover {
+    color: #e3c58a;
+}
+@media (max-width: 767px) {
+    .language-menu img,
+    .language-option img,
+    .language-item img {
+        width: 40px !important;
+        height: 27px !important;
+        object-fit: cover;
+    }
+}
