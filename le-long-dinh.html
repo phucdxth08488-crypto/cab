@@ -1,0 +1,319 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vua Lê Long Đĩnh | Cố đô Hoa Lư</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo" translate="no">
+            <span class="notranslate">HOA LƯ</span>
+        </a>
+
+        <nav class="top-nav">
+            <a href="index.html">Trang chủ</a>
+            <a href="gioi-thieu.html">Giới thiệu</a>
+            <a href="lich-su.html">Lịch sử</a>
+            <a href="dia-diem.html">Khám phá</a>
+        </nav>
+
+        <button class="menu-btn" onclick="openMenu()" aria-label="Mở menu">
+            ☰
+        </button>
+    </header>
+
+    <div id="menu" class="menu">
+        <button class="close-btn" onclick="closeMenu()" aria-label="Đóng menu">
+            <span translate="no" class="notranslate">×</span>
+        </button>
+
+        <a href="index.html">Trang chủ</a>
+        <a href="gioi-thieu.html">Giới thiệu</a>
+        <a href="lich-su.html">Lịch sử</a>
+        <a href="dia-diem.html">Khám phá</a>
+    </div>
+
+    <main>
+
+        <!-- BANNER -->
+        <section class="detail-hero">
+            <img src="image/images.jpg" alt="Vua Lê Long Đĩnh">
+
+            <div class="detail-hero-overlay"></div>
+
+            <div class="detail-hero-content">
+                <p class="detail-eyebrow">GIAI ĐOẠN CUỐI TRIỀU TIỀN LÊ</p>
+
+                <h1>VUA LÊ LONG ĐĨNH</h1>
+
+                <p class="detail-hero-subtitle">
+                    Vị hoàng đế cuối cùng của triều Tiền Lê,
+                    gắn với giai đoạn chuyển tiếp quan trọng
+                    trong lịch sử Đại Cồ Việt.
+                </p>
+            </div>
+        </section>
+<section class="voice-reader">
+    <div class="voice-reader-info">
+        <span class="voice-reader-icon">♫</span>
+
+        <div>
+            <h3>Thuyết minh di tích</h3>
+            <p id="voiceStatus">Sẵn sàng nghe thuyết minh</p>
+        </div>
+    </div>
+
+    <div class="voice-reader-controls">
+        <button type="button" id="voicePlay">
+            ▶ Nghe
+        </button>
+
+        <button type="button" id="voicePause">
+            ⏸ Tạm dừng
+        </button>
+
+        <button type="button" id="voiceStop">
+            ■ Dừng
+        </button>
+    </div>
+
+    <audio
+        id="voiceAudio"
+        data-audio-prefix="le-long-dinh"
+        preload="metadata">
+    </audio>
+</section>
+        <!-- THÂN THẾ -->
+        <section class="detail-introduction">
+
+            <div class="detail-introduction-image">
+                <img src="image/images.jpg" alt="Hình ảnh minh họa Vua Lê Long Đĩnh">
+            </div>
+
+            <div class="detail-introduction-content">
+                <p class="detail-section-label">THÂN THẾ VÀ SỰ NGHIỆP</p>
+
+                <h2>Vị vua cuối cùng của triều Tiền Lê</h2>
+
+                <p>
+                    Lê Long Đĩnh, còn được gọi là Ngọa Triều,
+                    là hoàng đế cuối cùng của triều Tiền Lê.
+                    Ông là con của Lê Đại Hành và lên ngôi năm 1005,
+                    sau những biến động trong hoàng tộc.
+                </p>
+
+                <p>
+                    Thời gian trị vì của Lê Long Đĩnh tương đối ngắn,
+                    từ năm 1005 đến năm 1009. Đây là giai đoạn triều đình
+                    phải đối mặt với những bất ổn về quyền lực,
+                    trong khi vai trò của các quan lại và lực lượng
+                    trong triều ngày càng trở nên quan trọng.
+                </p>
+
+                <p>
+                    Sau khi Lê Long Đĩnh qua đời năm 1009,
+                    triều Tiền Lê chấm dứt. Lý Công Uẩn được tôn lên ngôi,
+                    mở đầu triều Lý và đặt nền móng cho một giai đoạn
+                    mới trong lịch sử Việt Nam.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- DÒNG THỜI GIAN -->
+        <section class="detail-history-section">
+
+            <div class="detail-history-heading">
+                <p class="detail-section-label">DẤU ẤN LỊCH SỬ</p>
+
+                <h2>Những dấu mốc đáng chú ý</h2>
+
+                <p>
+                    Cuộc đời Lê Long Đĩnh gắn với những biến động
+                    cuối triều Tiền Lê và sự chuyển giao quyền lực
+                    sang triều Lý.
+                </p>
+            </div>
+
+            <div class="detail-timeline">
+
+                <div class="detail-timeline-item">
+                    <div class="detail-timeline-year">Cuối thế kỷ X</div>
+
+                    <div class="detail-timeline-content">
+                        <h3>Hoàng tử triều Tiền Lê</h3>
+
+                        <p>
+                            Lê Long Đĩnh là con của Lê Đại Hành,
+                            trưởng thành trong bối cảnh Đại Cồ Việt
+                            đang được củng cố sau những cuộc chiến
+                            bảo vệ đất nước.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-timeline-item">
+                    <div class="detail-timeline-year">1005</div>
+
+                    <div class="detail-timeline-content">
+                        <h3>Lên ngôi hoàng đế</h3>
+
+                        <p>
+                            Sau khi Lê Đại Hành qua đời, các cuộc tranh
+                            chấp trong hoàng tộc diễn ra. Lê Long Đĩnh
+                            giành được ngôi vua và tiếp tục cai trị
+                            Đại Cồ Việt.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-timeline-item">
+                    <div class="detail-timeline-year">1005–1009</div>
+
+                    <div class="detail-timeline-content">
+                        <h3>Thời gian trị vì</h3>
+
+                        <p>
+                            Triều đại của Lê Long Đĩnh kéo dài khoảng
+                            bốn năm. Sử liệu về thời kỳ này phản ánh
+                            nhiều biến động chính trị và những vấn đề
+                            liên quan đến việc kế vị.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-timeline-item">
+                    <div class="detail-timeline-year">1009</div>
+
+                    <div class="detail-timeline-content">
+                        <h3>Triều Tiền Lê kết thúc</h3>
+
+                        <p>
+                            Lê Long Đĩnh qua đời năm 1009.
+                            Lý Công Uẩn được tôn lên ngôi,
+                            mở đầu triều Lý và chấm dứt thời kỳ
+                            trị vì của nhà Tiền Lê.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- BỐI CẢNH LỊCH SỬ -->
+        <section class="detail-architecture">
+
+            <div class="detail-architecture-image">
+                <img src="image/images.jpg" alt="Di tích lịch sử Cố đô Hoa Lư">
+            </div>
+
+            <div class="detail-architecture-content">
+                <p class="detail-section-label">BỐI CẢNH LỊCH SỬ</p>
+
+                <h2>Giai đoạn chuyển giao quyền lực</h2>
+
+                <p>
+                    Thời Lê Long Đĩnh là giai đoạn cuối của triều Tiền Lê.
+                    Những biến động trong hoàng tộc và triều đình
+                    góp phần tạo nên bối cảnh chuyển giao quyền lực
+                    vào đầu thế kỷ XI.
+                </p>
+
+                <p>
+                    Năm 1009, Lý Công Uẩn lên ngôi, lập ra triều Lý.
+                    Đến năm 1010, nhà Lý quyết định dời đô từ Hoa Lư
+                    ra Đại La, sau đổi tên thành Thăng Long.
+                    Sự kiện này mở ra một bước ngoặt lớn trong lịch sử
+                    kinh đô của Việt Nam.
+                </p>
+
+                <p>
+                    Vì vậy, khi tìm hiểu về Lê Long Đĩnh,
+                    cần đặt triều đại của ông trong mối liên hệ
+                    với sự hình thành và kết thúc của triều Tiền Lê,
+                    cũng như sự ra đời của triều Lý.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- DI SẢN -->
+        <section class="detail-cultural-section">
+
+            <div class="detail-cultural-content">
+                <p class="detail-section-label">GIÁ TRỊ LỊCH SỬ</p>
+
+                <h2>Nhìn lại triều đại cuối của nhà Tiền Lê</h2>
+
+                <p>
+                    Lê Long Đĩnh là nhân vật gắn với giai đoạn
+                    kết thúc triều Tiền Lê. Việc nghiên cứu thời kỳ
+                    ông trị vì giúp làm rõ hơn tình hình chính trị
+                    Đại Cồ Việt đầu thế kỷ XI.
+                </p>
+
+                <p>
+                    Những câu chuyện về Lê Long Đĩnh trong sử sách
+                    cần được tiếp cận bằng cách đối chiếu nguồn tư liệu,
+                    phân biệt ghi chép lịch sử với những giai thoại
+                    được truyền lại qua nhiều thế hệ.
+                </p>
+
+                <p>
+                    Cùng với các di tích thờ Vua Đinh Tiên Hoàng
+                    và Vua Lê Đại Hành, quần thể di tích Cố đô Hoa Lư
+                    giúp du khách tìm hiểu thời kỳ đầu xây dựng
+                    nhà nước độc lập và những chuyển biến quan trọng
+                    trong lịch sử dân tộc.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- ĐIỀU HƯỚNG CUỐI TRANG -->
+        <section class="detail-navigation">
+
+            <a href="dia-diem.html" class="detail-back-link">
+                <span translate="no" class="notranslate">←</span>
+
+                <span>
+                    <small>QUAY LẠI</small>
+                    <strong>Danh sách địa điểm</strong>
+                </span>
+            </a>
+
+            <a href="duong-van-nga.html" class="detail-next-link">
+                <span>
+                    <small>TIẾP THEO</small>
+                    <strong>Thái hậu Dương Vân Nga</strong>
+                </span>
+
+                <span translate="no" class="notranslate">→</span>
+            </a>
+
+        </section>
+
+    </main>
+
+  <script src="./js/script.js"></script>
+
+<script>
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: "vi",
+            includedLanguages: "vi,en,fr,ko,zh-CN",
+            autoDisplay: false
+        }, "google_translate_element");
+    }
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>

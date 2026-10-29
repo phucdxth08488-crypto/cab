@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Tìm hiểu lịch sử Cố đô Hoa Lư, từ thời Đinh Tiên Hoàng, nhà Tiền Lê đến sự kiện dời đô năm 1010.">
+
+    <title>Lịch sử - Cố đô Hoa Lư</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <a href="index.html" class="logo" translate="no">
+            <span class="notranslate">HOA LƯ</span>
+        </a>
+
+        <nav class="top-nav">
+            <a href="index.html">Trang chủ</a>
+            <a href="gioi-thieu.html">Giới thiệu</a>
+            <a href="lich-su.html">Lịch sử</a>
+            <a href="dia-diem.html">Khám phá</a>
+        </nav>
+
+        <button class="menu-btn" onclick="openMenu()">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- BANNER -->
+
+    <section class="history-banner">
+
+        <img
+            src="image/images.jpg"
+            alt="Cố đô Hoa Lư">
+
+        <div class="history-banner-content">
+
+            <p>
+                DÒNG CHẢY LỊCH SỬ
+            </p>
+
+            <h1>
+                LỊCH SỬ HOA LƯ
+            </h1>
+
+        </div>
+
+    </section>
+<section class="voice-reader">
+    <div class="voice-reader-info">
+        <span class="voice-reader-icon">♫</span>
+        <div>
+            <h3>Thuyết minh</h3>
+            <p id="voiceStatus">Sẵn sàng nghe thuyết minh</p>
+        </div>
+    </div>
+
+    <div class="voice-reader-controls">
+        <button type="button" id="voicePlay">▶ Nghe</button>
+        <button type="button" id="voicePause">⏸ Tạm dừng</button>
+        <button type="button" id="voiceStop">■ Dừng</button>
+    </div>
+
+    <audio
+        id="voiceAudio"
+        data-audio-prefix="ls"
+        preload="metadata">
+    </audio>
+</section>
+
+    <main>
+
+
+        <!-- GIỚI THIỆU -->
+
+        <section class="history-intro">
+
+            <div class="history-content">
+
+                <p class="history-label">
+                    THẾ KỶ X
+                </p>
+
+                <h2>
+                    Một kinh đô giữa núi non
+                </h2>
+
+                <p>
+                    Thế kỷ X là một giai đoạn có ý nghĩa đặc biệt
+                    trong lịch sử Việt Nam. Sau nhiều biến động,
+                    đất nước từng bước hình thành một nhà nước
+                    độc lập và tự chủ.
+                </p>
+
+                <p>
+                    Trong bối cảnh đó, Hoa Lư được lựa chọn làm
+                    kinh đô. Vị trí nằm giữa những dãy núi đá
+                    tự nhiên tạo nên một khu vực có khả năng
+                    phòng thủ và bảo vệ trung tâm của quốc gia.
+                </p>
+
+                <p>
+                    Từ Hoa Lư, những triều đại đầu tiên của thời
+                    kỳ độc lập đã đặt nền móng cho sự phát triển
+                    của đất nước trong các thế kỷ tiếp theo.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- NHÀ ĐINH -->
+
+        <section class="history-period">
+
+            <div class="history-content">
+
+                <p class="history-label">
+                    968 – 979
+                </p>
+
+                <h2>
+                    Nhà Đinh và sự ra đời
+                    của Đại Cồ Việt
+                </h2>
+
+                <p>
+                    Sau khi dẹp loạn 12 sứ quân và thống nhất
+                    đất nước, Đinh Bộ Lĩnh lên ngôi Hoàng đế
+                    vào năm 968, lấy hiệu là Đinh Tiên Hoàng.
+                </p>
+
+                <p>
+                    Ông đặt quốc hiệu là Đại Cồ Việt và chọn
+                    Hoa Lư làm kinh đô. Đây là một dấu mốc
+                    quan trọng, đánh dấu sự hình thành của một
+                    nhà nước phong kiến độc lập sau thời kỳ
+                    đất nước bị chia cắt.
+                </p>
+
+                <p>
+                    Hoa Lư từ đó trở thành trung tâm chính trị,
+                    quân sự và hành chính của Đại Cồ Việt.
+                    Kinh đô được xây dựng giữa địa hình núi
+                    đá hiểm trở, tạo nên một hệ thống phòng thủ
+                    tự nhiên.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- NHÀ TIỀN LÊ -->
+
+        <section class="history-period dark">
+
+            <div class="history-content">
+
+                <p class="history-label">
+                    980 – 1009
+                </p>
+
+                <h2>
+                    Nhà Tiền Lê
+                </h2>
+
+                <p>
+                    Sau khi nhà Đinh suy yếu, Lê Hoàn lên ngôi
+                    vào năm 980 và thành lập nhà Tiền Lê.
+                    Hoa Lư tiếp tục được sử dụng làm kinh đô.
+                </p>
+
+                <p>
+                    Dưới thời Lê Đại Hành, Đại Cồ Việt phải
+                    đối mặt với những thử thách lớn từ bên ngoài.
+                    Quân đội Đại Cồ Việt đã đánh bại quân Tống,
+                    bảo vệ nền độc lập của đất nước.
+                </p>
+
+                <p>
+                    Trong thời kỳ này, Hoa Lư tiếp tục giữ vai
+                    trò là trung tâm chính trị của quốc gia.
+                    Nhiều hoạt động quan trọng của triều đình
+                    diễn ra tại kinh đô.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ĐỜI SỐNG KINH ĐÔ -->
+
+        <section class="history-period">
+
+            <div class="history-content">
+
+                <p class="history-label">
+                    KINH ĐÔ HOA LƯ
+                </p>
+
+                <h2>
+                    Không gian của một kinh đô cổ
+                </h2>
+
+                <p>
+                    Hoa Lư xưa được bao quanh bởi hệ thống núi
+                    đá tự nhiên. Các khu vực trong kinh đô được
+                    tổ chức gắn với địa hình và những tuyến đường
+                    ra vào.
+                </p>
+
+                <p>
+                    Núi đá, sông ngòi và các thung lũng tạo thành
+                    một không gian vừa thuận lợi cho sinh hoạt,
+                    vừa có giá trị phòng thủ.
+                </p>
+
+                <p>
+                    Những dấu tích còn lại ngày nay cho thấy
+                    Hoa Lư từng là một trung tâm quan trọng
+                    trong giai đoạn đầu của quốc gia Đại Cồ Việt.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- NHÀ LÝ -->
+
+        <section class="history-period dark">
+
+            <div class="history-content">
+
+                <p class="history-label">
+                    NĂM 1010
+                </p>
+
+                <h2>
+                    Dời đô về Thăng Long
+                </h2>
+
+                <p>
+                    Năm 1010, vua Lý Công Uẩn quyết định dời đô
+                    từ Hoa Lư ra Đại La và đổi tên thành Thăng Long.
+                </p>
+
+                <p>
+                    Quyết định này mở ra một giai đoạn phát triển
+                    mới của đất nước. Thăng Long có vị trí thuận
+                    lợi hơn cho việc mở rộng và phát triển một
+                    trung tâm chính trị lâu dài.
+                </p>
+
+                <p>
+                    Từ đây, Hoa Lư không còn giữ vai trò kinh đô.
+                    Tuy nhiên, vùng đất này vẫn lưu giữ những
+                    dấu tích quan trọng của thời kỳ đầu xây dựng
+                    nhà nước độc lập.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Ý NGHĨA LỊCH SỬ -->
+
+        <section class="history-intro">
+
+            <div class="history-content">
+
+                <p class="history-label">
+                    GIÁ TRỊ LỊCH SỬ
+                </p>
+
+                <h2>
+                    Dấu mốc của buổi đầu độc lập
+                </h2>
+
+                <p>
+                    Lịch sử Hoa Lư gắn liền với quá trình thống
+                    nhất đất nước, xây dựng nhà nước Đại Cồ Việt
+                    và bảo vệ nền độc lập trong thế kỷ X.
+                </p>
+
+                <p>
+                    Những sự kiện diễn ra tại Hoa Lư có ảnh hưởng
+                    quan trọng đến tiến trình phát triển của quốc
+                    gia Việt Nam trong các thời kỳ tiếp theo.
+                </p>
+
+                <p>
+                    Vì vậy, Hoa Lư không chỉ là một địa danh
+                    lịch sử mà còn là nơi lưu giữ ký ức về một
+                    giai đoạn quan trọng trong quá trình hình
+                    thành quốc gia Việt Nam.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- DÒNG THỜI GIAN -->
+
+        <section class="timeline-section">
+
+            <div class="timeline-title">
+
+                <p class="history-label">
+                    DÒNG THỜI GIAN
+                </p>
+
+                <h2>
+                    Những dấu mốc quan trọng
+                </h2>
+
+            </div>
+
+
+            <div class="timeline">
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-year">
+                        968
+                    </div>
+
+                    <div class="timeline-text">
+
+                        <h3>
+                            Hoa Lư trở thành kinh đô
+                        </h3>
+
+                        <p>
+                            Đinh Bộ Lĩnh lên ngôi Hoàng đế,
+                            đặt quốc hiệu Đại Cồ Việt và
+                            chọn Hoa Lư làm kinh đô.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-year">
+                        980
+                    </div>
+
+                    <div class="timeline-text">
+
+                        <h3>
+                            Nhà Tiền Lê
+                        </h3>
+
+                        <p>
+                            Lê Hoàn lên ngôi và tiếp tục
+                            sử dụng Hoa Lư làm kinh đô.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-year">
+                        1009
+                    </div>
+
+                    <div class="timeline-text">
+
+                        <h3>
+                            Kết thúc thời kỳ Tiền Lê
+                        </h3>
+
+                        <p>
+                            Nhà Tiền Lê kết thúc, mở ra
+                            sự chuyển tiếp sang triều Lý.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-year">
+                        1010
+                    </div>
+
+                    <div class="timeline-text">
+
+                        <h3>
+                            Dời đô về Thăng Long
+                        </h3>
+
+                        <p>
+                            Vua Lý Công Uẩn dời đô khỏi
+                            Hoa Lư và chọn Đại La làm
+                            kinh đô mới.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-year">
+                        Ngày nay
+                    </div>
+
+                    <div class="timeline-text">
+
+                        <h3>
+                            Di tích lịch sử
+                        </h3>
+
+                        <p>
+                            Hoa Lư trở thành một quần thể
+                            di tích quan trọng, lưu giữ
+                            những dấu tích của kinh đô xưa.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- HOA LƯ NGÀY NAY -->
+
+        <section class="history-today">
+
+            <div class="history-content">
+
+                <p class="history-label">
+                    HOA LƯ NGÀY NAY
+                </p>
+
+                <h2>
+                    Dấu ấn lịch sử còn lại
+                </h2>
+
+                <p>
+                    Ngày nay, những dấu tích của kinh đô Hoa Lư
+                    vẫn được bảo tồn thông qua các công trình
+                    đền thờ, di tích khảo cổ và cảnh quan
+                    thiên nhiên.
+                </p>
+
+                <p>
+                    Các di tích tại đây giúp thế hệ sau tìm hiểu
+                    về những bước phát triển quan trọng của
+                    lịch sử Việt Nam trong thế kỷ X.
+                </p>
+
+                <p>
+                    Không gian lịch sử kết hợp với cảnh quan
+                    núi đá tạo nên một điểm đến có giá trị
+                    về lịch sử, văn hóa và du lịch.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- QUAY LẠI -->
+
+        <section class="back-home">
+
+            <a href="index.html">
+                ← QUAY LẠI TRANG CHỦ
+            </a>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- MENU ĐIỆN THOẠI -->
+
+    <div id="menu" class="menu">
+
+        <button class="close-btn" onclick="closeMenu()">
+            ✕
+        </button>
+
+        <a href="index.html">
+            Trang chủ
+        </a>
+
+        <a href="gioi-thieu.html">
+            Giới thiệu
+        </a>
+
+        <a href="lich-su.html">
+            Lịch sử
+        </a>
+
+        <a href="dia-diem.html">
+            Địa điểm
+        </a>
+
+    </div>
+
+
+    <!-- GOOGLE TRANSLATE -->
+
+    <div id="google_translate_element"></div>
+
+    <script>
+
+        window.googleTranslateElementInit = function () {
+
+            new google.translate.TranslateElement({
+
+                pageLanguage: "vi",
+
+                includedLanguages: "vi,en,fr,ko,zh-CN",
+
+                autoDisplay: false
+
+            }, "google_translate_element");
+
+        };
+
+    </script>
+
+    <script src="./js/script.js"></script>
+
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Đền Vua Lê Đại Hành - Cố đô Hoa Lư</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <a href="index.html" class="logo" translate="no">
+    <span class="notranslate">HOA LƯ</span>
+</a>
+
+        <nav class="top-nav">
+            <a href="index.html">Trang chủ</a>
+            <a href="gioi-thieu.html">Giới thiệu</a>
+            <a href="lich-su.html">Lịch sử</a>
+            <a href="dia-diem.html" class="active">Khám phá</a>
+            
+            
+        </nav>
+
+        <button class="menu-btn" onclick="openMenu()">☰</button>
+
+    </header>
+
+
+    <main>
+
+        <section class="detail-hero">
+
+            <img src="./image/images.jpg"
+                 alt="Đền Vua Lê Đại Hành">
+
+            <div class="detail-hero-overlay"></div>
+
+            <div class="detail-hero-content">
+
+                <p class="detail-eyebrow">
+                    DI SẢN LỊCH SỬ HOA LƯ
+                </p>
+
+                <h1>ĐỀN VUA LÊ ĐẠI HÀNH</h1>
+
+                <p class="detail-hero-subtitle">
+                    Tưởng nhớ vị vua của triều đại Tiền Lê
+                </p>
+
+                <a href="#gioi-thieu-den" class="detail-discover">
+                    KHÁM PHÁ DI TÍCH 
+                </a>
+
+            </div>
+
+        </section>
+
+<section class="voice-reader">
+    <div class="voice-reader-info">
+        <span class="voice-reader-icon">♫</span>
+
+        <div>
+            <h3>Thuyết minh di tích</h3>
+            <p id="voiceStatus">Sẵn sàng nghe thuyết minh</p>
+        </div>
+    </div>
+
+    <div class="voice-reader-controls">
+        <button type="button" id="voicePlay">
+            ▶ Nghe
+        </button>
+
+        <button type="button" id="voicePause">
+            ⏸ Tạm dừng
+        </button>
+
+        <button type="button" id="voiceStop">
+            ■ Dừng
+        </button>
+    </div>
+
+    <audio
+        id="voiceAudio"
+        data-audio-prefix="den-vua-le"
+        preload="metadata">
+    </audio>
+</section>
+
+        <!-- GIỚI THIỆU -->
+        <section class="detail-introduction" id="gioi-thieu-den">
+
+            <div class="detail-introduction-image">
+
+                <img src="./image/images.jpg"
+                     alt="Không gian Đền Vua Lê Đại Hành">
+
+                <div class="detail-image-caption">
+                    CỐ ĐÔ HOA LƯ — NINH BÌNH
+                </div>
+
+            </div>
+
+            <div class="detail-introduction-content">
+
+                <p class="detail-section-label">
+                    GIỚI THIỆU DI TÍCH
+                </p>
+
+                <h2>
+                    Dấu ấn của vị vua tiếp nối triều đại Đại Cồ Việt
+                </h2>
+
+                <p>
+                    Đền Vua Lê Đại Hành là một công trình thờ tự
+                    nằm trong khu di tích Cố đô Hoa Lư, gắn liền
+                    với Lê Hoàn, vị vua sáng lập triều Tiền Lê.
+                </p>
+
+                <p>
+                    Sau khi lên ngôi năm 980, Lê Hoàn tiếp tục
+                    sử dụng Hoa Lư làm kinh đô. Ông có vai trò
+                    quan trọng trong việc bảo vệ nền độc lập
+                    của Đại Cồ Việt, đặc biệt trong cuộc kháng
+                    chiến chống quân Tống năm 981.
+                </p>
+
+                <p>
+                    Di tích góp phần lưu giữ ký ức về một giai đoạn
+                    quan trọng trong lịch sử dân tộc, đồng thời
+                    thể hiện truyền thống tưởng nhớ các vị vua
+                    có công với đất nước.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- LỊCH SỬ -->
+        <section class="detail-history-section">
+
+            <div class="detail-history-heading">
+
+                <p class="detail-section-label">
+                    DẤU ẤN LỊCH SỬ
+                </p>
+
+                <h2>
+                    Triều đại Tiền Lê tại Hoa Lư
+                </h2>
+
+                <p>
+                    Những sự kiện tiêu biểu gắn với Lê Hoàn
+                    và lịch sử Đại Cồ Việt.
+                </p>
+
+            </div>
+
+
+            <div class="detail-timeline">
+
+                <article class="detail-timeline-item">
+
+                    <div class="detail-timeline-year">980</div>
+
+                    <div class="detail-timeline-content">
+
+                        <h3>Lê Hoàn lên ngôi</h3>
+
+                        <p>
+                            Lê Hoàn lên ngôi Hoàng đế, mở đầu
+                            triều Tiền Lê và tiếp tục lấy Hoa Lư
+                            làm trung tâm chính trị của đất nước.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="detail-timeline-item">
+
+                    <div class="detail-timeline-year">981</div>
+
+                    <div class="detail-timeline-content">
+
+                        <h3>Chiến thắng quân Tống</h3>
+
+                        <p>
+                            Dưới sự chỉ huy của Lê Hoàn,
+                            quân dân Đại Cồ Việt đánh bại cuộc
+                            xâm lược của quân Tống, bảo vệ nền
+                            độc lập của đất nước.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="detail-timeline-item">
+
+                    <div class="detail-timeline-year">1009</div>
+
+                    <div class="detail-timeline-content">
+
+                        <h3>Kết thúc triều Tiền Lê</h3>
+
+                        <p>
+                            Triều Tiền Lê kết thúc vào năm 1009.
+                            Sau đó, Lý Công Uẩn lên ngôi và mở đầu
+                            triều Lý.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- KIẾN TRÚC -->
+        <section class="detail-architecture">
+
+            <div class="detail-architecture-content">
+
+                <p class="detail-section-label">
+                    GIÁ TRỊ KIẾN TRÚC
+                </p>
+
+                <h2>
+                    Không gian thờ tự truyền thống
+                </h2>
+
+                <p>
+                    Đền Vua Lê Đại Hành mang đặc trưng của
+                    kiến trúc đền thờ truyền thống Việt Nam.
+                    Không gian thờ tự được tổ chức trang nghiêm,
+                    gắn với hoạt động tưởng niệm và thờ phụng.
+                </p>
+
+                <p>
+                    Các công trình trong khu di tích góp phần
+                    phản ánh nghệ thuật kiến trúc, tín ngưỡng
+                    và truyền thống văn hóa được gìn giữ
+                    qua nhiều thế hệ.
+                </p>
+
+            </div>
+
+            <div class="detail-architecture-image">
+
+                <img src="./image/images.jpg"
+                     alt="Kiến trúc truyền thống tại Hoa Lư">
+
+            </div>
+
+        </section>
+
+
+        <!-- GIÁ TRỊ VĂN HÓA -->
+        <section class="detail-cultural-section">
+
+            <div class="detail-cultural-content">
+
+                <p class="detail-section-label">
+                    GIÁ TRỊ VĂN HÓA
+                </p>
+
+                <h2>
+                    Gìn giữ ký ức về triều đại Tiền Lê
+                </h2>
+
+                <p>
+                    Đền Vua Lê Đại Hành góp phần bảo tồn những
+                    giá trị lịch sử liên quan đến một triều đại
+                    quan trọng trong quá trình xây dựng và
+                    bảo vệ nhà nước Đại Cồ Việt.
+                </p>
+
+                <p>
+                    Đây cũng là địa điểm giúp du khách tìm hiểu
+                    về Lê Hoàn, lịch sử Hoa Lư và truyền thống
+                    tri ân những người có công với đất nước.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ĐIỀU HƯỚNG -->
+        <section class="detail-navigation">
+
+            <a href="dia-diem.html" class="detail-back-link">
+                <span>←</span>
+                <span>
+                    <small>QUAY LẠI</small>
+                    <strong>Danh sách địa điểm</strong>
+                </span>
+            </a>
+
+            <a href="di-tich-hoa-lu.html" class="detail-next-link">
+                <span>
+                    <small>TIẾP THEO</small>
+                    <strong>Di tích cố đô</strong>
+                </span>
+                <span>→</span>
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <div id="menu" class="menu">
+
+        <button class="close-btn" onclick="closeMenu()">✕</button>
+
+        <a href="index.html">Trang chủ</a>
+        <a href="gioi-thieu.html">Giới thiệu</a>
+        <a href="lich-su.html">Lịch sử</a>
+        <a href="dia-diem.html">Địa điểm</a>
+        
+        
+
+    </div>
+
+
+  <script src="./js/script.js"></script>
+
+<script>
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: "vi",
+            includedLanguages: "vi,en,fr,ko,zh-CN",
+            autoDisplay: false
+        }, "google_translate_element");
+    }
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vua Lê Đại Hành | Cố đô Hoa Lư</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo" translate="no">
+            <span class="notranslate">HOA LƯ</span>
+        </a>
+
+        <nav class="top-nav">
+            <a href="index.html">Trang chủ</a>
+            <a href="gioi-thieu.html">Giới thiệu</a>
+            <a href="lich-su.html">Lịch sử</a>
+            <a href="dia-diem.html">Khám phá</a>
+        </nav>
+
+        <button class="menu-btn" onclick="openMenu()" aria-label="Mở menu">
+            ☰
+        </button>
+    </header>
+
+    <div id="menu" class="menu">
+        <button class="close-btn" onclick="closeMenu()" aria-label="Đóng menu">
+            <span translate="no" class="notranslate">×</span>
+        </button>
+
+        <a href="index.html">Trang chủ</a>
+        <a href="gioi-thieu.html">Giới thiệu</a>
+        <a href="lich-su.html">Lịch sử</a>
+        <a href="dia-diem.html">Khám phá</a>
+    </div>
+
+    <main>
+
+        <section class="detail-hero">
+            <img src="image/images.jpg" alt="Vua Lê Đại Hành">
+
+            <div class="detail-hero-overlay"></div>
+
+            <div class="detail-hero-content">
+                <p class="detail-eyebrow">TRIỀU ĐẠI TIỀN LÊ</p>
+
+                <h1>VUA LÊ ĐẠI HÀNH</h1>
+
+                <p class="detail-hero-subtitle">
+                    Vị hoàng đế bảo vệ nền độc lập Đại Cồ Việt
+                    và để lại dấu ấn sâu đậm tại Cố đô Hoa Lư.
+                </p>
+            </div>
+        </section>
+
+<section class="voice-reader">
+    <div class="voice-reader-info">
+        <span class="voice-reader-icon">♫</span>
+        <div>
+            <h3>Thuyết minh di tích</h3>
+            <p id="voiceStatus">Sẵn sàng nghe thuyết minh</p>
+        </div>
+    </div>
+
+    <div class="voice-reader-controls">
+        <button type="button" id="voicePlay">
+            ▶ Nghe
+        </button>
+
+        <button type="button" id="voicePause">
+            ⏸ Tạm dừng
+        </button>
+
+        <button type="button" id="voiceStop">
+            ■ Dừng
+        </button>
+    </div>
+
+    <audio
+        id="voiceAudio"
+        data-audio-prefix="le-dai-hanh"
+        preload="metadata">
+    </audio>
+</section>
+
+        <section class="detail-introduction">
+
+            <div class="detail-introduction-image">
+                <img src="image/images.jpg" alt="Hình ảnh minh họa Vua Lê Đại Hành">
+            </div>
+
+            <div class="detail-introduction-content">
+                <p class="detail-section-label">THÂN THẾ VÀ SỰ NGHIỆP</p>
+
+                <h2>Vị hoàng đế của triều Tiền Lê</h2>
+
+                <p>
+                    Lê Đại Hành, tên húy là Lê Hoàn, sinh năm 941.
+                    Ông là vị hoàng đế sáng lập triều Tiền Lê,
+                    trị vì Đại Cồ Việt từ năm 980 đến năm 1005.
+                </p>
+
+                <p>
+                    Trước khi lên ngôi, Lê Hoàn từng giữ chức
+                    Thập đạo tướng quân dưới triều Đinh. Ông có
+                    vai trò quan trọng trong quân đội và việc
+                    bảo vệ đất nước trước những biến động chính trị.
+                </p>
+
+                <p>
+                    Năm 980, Lê Hoàn lên ngôi hoàng đế trong bối cảnh
+                    Đại Cồ Việt đứng trước nguy cơ bị nhà Tống xâm lược.
+                    Từ Hoa Lư, ông tổ chức lực lượng kháng chiến và
+                    củng cố quyền lực của triều đình.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="detail-history-section">
+
+            <div class="detail-history-heading">
+                <p class="detail-section-label">DẤU ẤN LỊCH SỬ</p>
+
+                <h2>Những bước ngoặt trong cuộc đời</h2>
+
+                <p>
+                    Các dấu mốc quan trọng gắn với sự nghiệp quân sự,
+                    chính trị và quá trình củng cố nền độc lập
+                    của Đại Cồ Việt.
+                </p>
+            </div>
+
+            <div class="detail-timeline">
+
+                <div class="detail-timeline-item">
+                    <div class="detail-timeline-year">941</div>
+
+                    <div class="detail-timeline-content">
+                        <h3>Lê Hoàn ra đời</h3>
+
+                        <p>
+                            Lê Hoàn sinh năm 941, quê ở vùng Ái Châu,
+                            thuộc khu vực Thanh Hóa ngày nay.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-timeline-item">
+                    <div class="detail-timeline-year">968–979</div>
+
+                    <div class="detail-timeline-content">
+                        <h3>Phục vụ triều Đinh</h3>
+
+                        <p>
+                            Dưới triều Đinh Tiên Hoàng, Lê Hoàn
+                            đảm nhận trọng trách trong quân đội,
+                            từng bước trở thành một tướng lĩnh
+                            có ảnh hưởng lớn.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-timeline-item">
+                    <div class="detail-timeline-year">980</div>
+
+                    <div class="detail-timeline-content">
+                        <h3>Lên ngôi hoàng đế</h3>
+
+                        <p>
+                            Trước nguy cơ xâm lược từ nhà Tống,
+                            Lê Hoàn lên ngôi, tổ chức việc phòng thủ
+                            và trực tiếp lãnh đạo đất nước.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-timeline-item">
+                    <div class="detail-timeline-year">981</div>
+
+                    <div class="detail-timeline-content">
+                        <h3>Chiến thắng quân Tống</h3>
+
+                        <p>
+                            Quân dân Đại Cồ Việt đánh bại cuộc
+                            xâm lược của nhà Tống, bảo vệ nền độc lập
+                            và khẳng định vị thế của quốc gia.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-timeline-item">
+                    <div class="detail-timeline-year">982</div>
+
+                    <div class="detail-timeline-content">
+                        <h3>Chiến dịch chống Champa</h3>
+
+                        <p>
+                            Lê Đại Hành tiến hành chiến dịch quân sự
+                            chống Champa, tiếp tục củng cố vị thế
+                            của Đại Cồ Việt trong khu vực.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-timeline-item">
+                    <div class="detail-timeline-year">1005</div>
+
+                    <div class="detail-timeline-content">
+                        <h3>Kết thúc triều đại</h3>
+
+                        <p>
+                            Lê Đại Hành qua đời năm 1005 tại Hoa Lư.
+                            Những dấu ấn về quân sự và chính trị
+                            của ông trở thành một phần quan trọng
+                            trong lịch sử Việt Nam.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="detail-architecture">
+
+            <div class="detail-architecture-image">
+                <img src="image/images.jpg" alt="Di tích lịch sử triều Tiền Lê">
+            </div>
+
+            <div class="detail-architecture-content">
+                <p class="detail-section-label">CÔNG LAO VÀ SỰ NGHIỆP</p>
+
+                <h2>Bảo vệ nền độc lập Đại Cồ Việt</h2>
+
+                <p>
+                    Chiến thắng quân Tống năm 981 là một dấu mốc
+                    nổi bật trong sự nghiệp của Lê Đại Hành.
+                    Cuộc kháng chiến cho thấy khả năng tổ chức
+                    quân sự và quyết tâm bảo vệ chủ quyền đất nước.
+                </p>
+
+                <p>
+                    Trong thời gian trị vì, ông tiếp tục củng cố
+                    chính quyền, duy trì quân đội và ổn định tình hình
+                    trong nước. Hoa Lư vẫn giữ vai trò kinh đô,
+                    là trung tâm chính trị của Đại Cồ Việt.
+                </p>
+
+                <p>
+                    Triều Tiền Lê kế thừa nền tảng quốc gia được
+                    xây dựng từ thời Đinh, góp phần duy trì nền độc lập
+                    của đất nước trong giai đoạn đầu tự chủ.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="detail-cultural-section">
+
+            <div class="detail-cultural-content">
+                <p class="detail-section-label">DI SẢN LỊCH SỬ</p>
+
+                <h2>Dấu ấn còn lại tại Cố đô Hoa Lư</h2>
+
+                <p>
+                    Đền thờ Vua Lê Đại Hành là một di tích quan trọng
+                    trong quần thể Cố đô Hoa Lư. Công trình gắn với
+                    việc tưởng niệm vị hoàng đế và tìm hiểu lịch sử
+                    triều Tiền Lê.
+                </p>
+
+                <p>
+                    Qua di tích, du khách có thể tìm hiểu thêm về
+                    kiến trúc truyền thống, tín ngưỡng thờ các nhân vật
+                    lịch sử và vai trò của Hoa Lư trong thế kỷ X.
+                </p>
+
+                <p>
+                    Những di tích gắn với triều Đinh và triều Tiền Lê
+                    góp phần lưu giữ ký ức về thời kỳ xây dựng,
+                    bảo vệ nền độc lập của Đại Cồ Việt.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="detail-navigation">
+
+            <a href="dia-diem.html" class="detail-back-link">
+                <span translate="no" class="notranslate">←</span>
+
+                <span>
+                    <small>QUAY LẠI</small>
+                    <strong>Danh sách địa điểm</strong>
+                </span>
+            </a>
+
+            <a href="le-long-dinh.html" class="detail-next-link">
+                <span>
+                    <small>TIẾP THEO</small>
+                    <strong>Thân thế và sự nghiệp Vua Lê Long Đĩnh</strong>
+                </span>
+
+                <span translate="no" class="notranslate">→</span>
+            </a>
+
+        </section>
+
+    </main>
+
+  <script src="./js/script.js"></script>
+
+<script>
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: "vi",
+            includedLanguages: "vi,en,fr,ko,zh-CN",
+            autoDisplay: false
+        }, "google_translate_element");
+    }
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>

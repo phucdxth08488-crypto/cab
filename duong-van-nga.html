@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Thái hậu Dương Vân Nga | Cố đô Hoa Lư</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <a href="index.html" class="logo" translate="no">
+            <span class="notranslate">HOA LƯ</span>
+        </a>
+
+        <nav class="top-nav">
+            <a href="index.html">Trang chủ</a>
+            <a href="gioi-thieu.html">Giới thiệu</a>
+            <a href="lich-su.html">Lịch sử</a>
+            <a href="dia-diem.html">Khám phá</a>
+        </nav>
+
+        
+    </header>
+
+    <!-- MENU ĐIỆN THOẠI -->
+    <div id="menu" class="menu">
+        <button
+            class="close-btn"
+            type="button"
+            onclick="closeMenu()"
+            aria-label="Đóng menu">
+            <span translate="no" class="notranslate">×</span>
+        </button>
+
+        <a href="index.html">Trang chủ</a>
+        <a href="gioi-thieu.html">Giới thiệu</a>
+        <a href="lich-su.html">Lịch sử</a>
+        <a href="dia-diem.html">Địa điểm</a>
+        <a href="ban-do.html">Bản đồ</a>
+    </div>
+
+    <main>
+
+        <!-- ẢNH BÌA -->
+        <section class="detail-hero">
+            <img
+                src="image/images.jpg"
+                alt="Di tích lịch sử Cố đô Hoa Lư">
+
+            <div class="detail-hero-overlay"></div>
+
+            <div class="detail-hero-content">
+                <p class="detail-eyebrow">
+                    DẤU ẤN LỊCH SỬ CỐ ĐÔ HOA LƯ
+                </p>
+
+                <h1>THÁI HẬU DƯƠNG VÂN NGA</h1>
+
+                <p class="detail-hero-subtitle">
+                    Người phụ nữ gắn liền với bước chuyển giao quyền lực
+                    từ nhà Đinh sang nhà Tiền Lê trong lịch sử dân tộc.
+                </p>
+            </div>
+        </section>
+<section class="voice-reader">
+    <div class="voice-reader-info">
+        <span class="voice-reader-icon">♫</span>
+
+        <div>
+            <h3>Thuyết minh di tích</h3>
+            <p id="voiceStatus">Sẵn sàng nghe thuyết minh</p>
+        </div>
+    </div>
+
+    <div class="voice-reader-controls">
+        <button type="button" id="voicePlay">
+            ▶ Nghe
+        </button>
+
+        <button type="button" id="voicePause">
+            ⏸ Tạm dừng
+        </button>
+
+        <button type="button" id="voiceStop">
+            ■ Dừng
+        </button>
+    </div>
+
+    <audio
+        id="voiceAudio"
+        data-audio-prefix="duong-van-nga"
+        preload="metadata">
+    </audio>
+</section>
+        <!-- GIỚI THIỆU -->
+        <section class="detail-introduction">
+
+            <div class="detail-introduction-image">
+                <img
+                    src="image/images.jpg"
+                    alt="Không gian di tích Cố đô Hoa Lư">
+            </div>
+
+            <div class="detail-introduction-content">
+                <p class="detail-section-label">
+                    NHÂN VẬT LỊCH SỬ
+                </p>
+
+                <h2>Người phụ nữ giữa bước ngoặt của lịch sử</h2>
+
+                <p>
+                    Dương Vân Nga là một nhân vật nữ nổi bật trong lịch sử
+                    Việt Nam thế kỷ X. Bà là hoàng hậu của vua Đinh Tiên Hoàng
+                    và sau đó trở thành hoàng hậu của vua Lê Đại Hành.
+                </p>
+
+                <p>
+                    Sau khi Đinh Tiên Hoàng và con trai là Đinh Liễn bị sát hại
+                    năm 979, Đinh Toàn lên ngôi khi còn nhỏ. Dương Vân Nga
+                    trở thành một trong những nhân vật ở vị trí trung tâm
+                    trong giai đoạn triều đình nhà Đinh đối mặt với nhiều
+                    biến động.
+                </p>
+
+                <p>
+                    Năm 980, trước nguy cơ quân Tống tiến xuống xâm lược,
+                    triều đình đã chuyển giao ngôi vua cho Lê Hoàn.
+                    Dương Vân Nga gắn liền với sự kiện này, một bước ngoặt
+                    dẫn đến sự hình thành của triều Tiền Lê.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- THÂN THẾ VÀ VAI TRÒ -->
+        <section class="detail-history-section">
+
+            <div class="detail-history-heading">
+                <p class="detail-section-label">
+                    CUỘC ĐỜI VÀ SỰ NGHIỆP
+                </p>
+
+                <h2>Vai trò của Dương Vân Nga trong lịch sử</h2>
+
+                <p>
+                    Cuộc đời của bà gắn với sự chuyển tiếp giữa hai triều đại
+                    trong thời kỳ đầu xây dựng nền độc lập của Đại Cồ Việt.
+                </p>
+            </div>
+
+            <div class="detail-timeline">
+
+                <div class="detail-timeline-item">
+                    <div class="detail-timeline-year">
+                        Thời nhà Đinh
+                    </div>
+
+                    <div class="detail-timeline-content">
+                        <h3>Hoàng hậu của Đinh Tiên Hoàng</h3>
+
+                        <p>
+                            Dương Vân Nga trở thành hoàng hậu của Đinh Tiên Hoàng,
+                            vị hoàng đế sáng lập nhà Đinh và đặt kinh đô tại
+                            Hoa Lư. Bà sống trong giai đoạn đất nước vừa trải qua
+                            quá trình thống nhất sau thời kỳ loạn 12 sứ quân.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-timeline-item">
+                    <div class="detail-timeline-year">
+                        Năm 979
+                    </div>
+
+                    <div class="detail-timeline-content">
+                        <h3>Triều đình rơi vào biến động</h3>
+
+                        <p>
+                            Đinh Tiên Hoàng và Đinh Liễn bị sát hại.
+                            Đinh Toàn lên ngôi khi còn nhỏ, khiến tình hình
+                            triều đình trở nên phức tạp. Trong bối cảnh đó,
+                            nguy cơ can thiệp từ bên ngoài ngày càng gia tăng.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-timeline-item">
+                    <div class="detail-timeline-year">
+                        Năm 980
+                    </div>
+
+                    <div class="detail-timeline-content">
+                        <h3>Bước ngoặt chuyển giao ngôi vua</h3>
+
+                        <p>
+                            Trước nguy cơ xâm lược của nhà Tống, triều đình
+                            tôn Lê Hoàn lên ngôi hoàng đế. Dương Vân Nga
+                            gắn liền với sự kiện chuyển giao quyền lực này.
+                            Lê Hoàn sau đó lãnh đạo cuộc kháng chiến chống Tống,
+                            bảo vệ nền độc lập của Đại Cồ Việt.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-timeline-item">
+                    <div class="detail-timeline-year">
+                        Thời Tiền Lê
+                    </div>
+
+                    <div class="detail-timeline-content">
+                        <h3>Tiếp tục gắn bó với triều đình</h3>
+
+                        <p>
+                            Sau khi Lê Hoàn lên ngôi, Dương Vân Nga trở thành
+                            hoàng hậu của ông. Cuộc đời bà vì vậy gắn với cả
+                            triều Đinh và triều Tiền Lê, đồng thời trở thành
+                            chủ đề được bàn luận trong nhiều ghi chép lịch sử
+                            và cách nhìn nhận của hậu thế.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- BỐI CẢNH LỊCH SỬ -->
+        <section class="detail-architecture">
+
+            <div class="detail-architecture-image">
+                <img
+                    src="image/images.jpg"
+                    alt="Cảnh quan di tích lịch sử Hoa Lư">
+            </div>
+
+            <div class="detail-architecture-content">
+                <p class="detail-section-label">
+                    BỐI CẢNH LỊCH SỬ
+                </p>
+
+                <h2>Hoa Lư và sự chuyển tiếp giữa hai triều đại</h2>
+
+                <p>
+                    Vào thế kỷ X, Hoa Lư là kinh đô của Đại Cồ Việt,
+                    giữ vị trí quan trọng về chính trị và quân sự.
+                    Địa hình núi đá, thung lũng và hệ thống sông ngòi
+                    tạo nên lợi thế phòng thủ cho kinh đô.
+                </p>
+
+                <p>
+                    Việc Lê Hoàn lên ngôi diễn ra trong hoàn cảnh đất nước
+                    cần một người lãnh đạo có khả năng tổ chức quân đội
+                    và ứng phó với nguy cơ xâm lược. Chiến thắng trước quân Tống
+                    năm 981 góp phần củng cố nền độc lập của Đại Cồ Việt.
+                </p>
+
+                <p>
+                    Câu chuyện về Dương Vân Nga cần được tìm hiểu trong
+                    bối cảnh chính trị và quân sự của thời đại, thay vì
+                    chỉ nhìn nhận qua những đánh giá đơn giản về đời tư
+                    của một nhân vật lịch sử.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- GIÁ TRỊ LỊCH SỬ -->
+        <section class="detail-cultural-section">
+
+            <div class="detail-cultural-content">
+                <p class="detail-section-label">
+                    GIÁ TRỊ LỊCH SỬ
+                </p>
+
+                <h2>Dấu ấn của Dương Vân Nga trong ký ức dân tộc</h2>
+
+                <p>
+                    Dương Vân Nga là nhân vật gây nhiều tranh luận trong
+                    lịch sử Việt Nam. Việc bà gắn với hai triều đại khiến
+                    câu chuyện của bà thường được xem xét từ nhiều góc độ:
+                    hoàn cảnh chính trị, yêu cầu bảo vệ đất nước và tính
+                    chính danh của quyền lực trong thời kỳ đầu độc lập.
+                </p>
+
+                <p>
+                    Khi tìm hiểu về bà, cần phân biệt giữa những sự kiện
+                    được ghi trong sử liệu với các truyền thuyết hoặc cách
+                    diễn giải hình thành về sau. Cách tiếp cận thận trọng
+                    giúp người đọc hiểu rõ hơn những khó khăn mà triều đình
+                    Đại Cồ Việt phải đối mặt vào cuối thế kỷ X.
+                </p>
+
+                <p>
+                    Ngày nay, khi tham quan Cố đô Hoa Lư, câu chuyện về
+                    Dương Vân Nga góp phần làm rõ hơn mối liên hệ giữa
+                    các nhân vật, triều đại và những quyết định có ảnh hưởng
+                    đến lịch sử dân tộc.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- ĐIỀU HƯỚNG CUỐI TRANG -->
+        <section class="detail-navigation">
+
+            <a href="dia-diem.html" class="detail-back-link">
+                <span translate="no" class="notranslate">←</span>
+
+                <span>
+                    <small>QUAY LẠI</small>
+                    <strong>Danh sách địa điểm</strong>
+                </span>
+            </a>
+
+            <a href="vua-dinh-tien-hoang.html" class="detail-next-link">
+                <span>
+                    <small>TIẾP TỤC KHÁM PHÁ</small>
+                    <strong>Thân thế và sự nghiệp Vua Đinh Tiên Hoàng</strong>
+                </span>
+
+                <span translate="no" class="notranslate">→</span>
+            </a>
+
+        </section>
+
+    </main>
+      <script src="./js/script.js"></script>
+
+<script>
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: "vi",
+            includedLanguages: "vi,en,fr,ko,zh-CN",
+            autoDisplay: false
+        }, "google_translate_element");
+    }
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+
+</html>

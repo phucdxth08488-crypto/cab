@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thân thế và sự nghiệp Vua Đinh Tiên Hoàng | Cố đô Hoa Lư</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo" translate="no">
+            <span class="notranslate">HOA LƯ</span>
+        </a>
+
+        <nav class="top-nav">
+            <a href="index.html">Trang chủ</a>
+            <a href="gioi-thieu.html">Giới thiệu</a>
+            <a href="lich-su.html">Lịch sử</a>
+            <a href="dia-diem.html">Khám phá</a>
+        </nav>
+
+        <button class="menu-btn" onclick="openMenu()" aria-label="Mở menu">☰</button>
+    </header>
+
+    <div class="menu" id="menu">
+        <button class="close-btn" onclick="closeMenu()" aria-label="Đóng menu">×</button>
+        <a href="index.html">Trang chủ</a>
+        <a href="gioi-thieu.html">Giới thiệu</a>
+        <a href="lich-su.html">Lịch sử</a>
+        <a href="dia-diem.html">Địa điểm</a>
+    </div>
+
+    <main>
+
+        <section class="detail-hero">
+            <img src="image/images.jpg" alt="Vua Đinh Tiên Hoàng và Cố đô Hoa Lư">
+
+            <div class="detail-hero-overlay"></div>
+
+            <div class="detail-hero-content">
+                <span class="detail-eyebrow">NHÂN VẬT LỊCH SỬ</span>
+
+                <h1>VUA ĐINH TIÊN HOÀNG</h1>
+
+                <p class="detail-hero-subtitle">
+                    Người thống nhất đất nước, sáng lập nhà Đinh
+                    và đặt nền móng cho quốc gia Đại Cồ Việt.
+                </p>
+            </div>
+        </section>
+
+
+<section class="voice-reader">
+    <div class="voice-reader-info">
+        <span class="voice-reader-icon">♫</span>
+        <div>
+            <h3>Thuyết minh di tích</h3>
+            <p id="voiceStatus">Sẵn sàng nghe thuyết minh</p>
+        </div>
+    </div>
+
+    <div class="voice-reader-controls">
+        <button type="button" id="voicePlay">▶ Nghe</button>
+        <button type="button" id="voicePause">⏸ Tạm dừng</button>
+        <button type="button" id="voiceStop">■ Dừng</button>
+    </div>
+
+    <audio id="voiceAudio" preload="metadata"></audio>
+</section>
+
+
+        <section class="detail-introduction" id="gioi-thieu">
+
+            <div class="detail-introduction-image">
+                <img src="image/images.jpg" alt="Di tích lịch sử Cố đô Hoa Lư">
+            </div>
+
+            <div class="detail-introduction-content">
+                <p class="detail-section-label">THÂN THẾ</p>
+
+                <h2>Từ cậu bé cờ lau đến vị hoàng đế sáng lập nhà Đinh</h2>
+
+                <p>
+                    Đinh Tiên Hoàng, tên thật là Đinh Bộ Lĩnh, sinh năm 924,
+                    quê ở vùng Đại Hữu, thuộc khu vực Gia Viễn, Ninh Bình
+                    ngày nay. Ông là nhân vật có vai trò quan trọng trong
+                    lịch sử Việt Nam thế kỷ X.
+                </p>
+
+                <p>
+                    Thuở nhỏ, Đinh Bộ Lĩnh gắn liền với câu chuyện cùng bạn bè
+                    lấy bông lau làm cờ, tổ chức trò chơi trận mạc. Hình ảnh
+                    cờ lau trở thành biểu tượng gắn với tuổi thơ của ông
+                    trong truyền thống lịch sử dân tộc.
+                </p>
+
+                <p>
+                    Khi đất nước rơi vào tình trạng phân tranh giữa các thế lực
+                    cát cứ, Đinh Bộ Lĩnh từng bước tập hợp lực lượng, xây dựng
+                    căn cứ ở vùng Hoa Lư và tiến hành công cuộc thống nhất
+                    đất nước.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="detail-history-section">
+
+            <div class="detail-history-heading">
+                <p class="detail-section-label">HÀNH TRÌNH LỊCH SỬ</p>
+
+                <h2>Những dấu mốc quan trọng</h2>
+
+                <p>
+                    Từ vùng đất Hoa Lư, Đinh Bộ Lĩnh đã ghi dấu ấn trong
+                    bước chuyển quan trọng của lịch sử dân tộc.
+                </p>
+            </div>
+
+            <div class="detail-timeline">
+
+                <div class="detail-timeline-item">
+                    <div class="detail-timeline-year">924</div>
+                    <div class="detail-timeline-content">
+                        <h3>Đinh Bộ Lĩnh ra đời</h3>
+                        <p>
+                            Đinh Bộ Lĩnh sinh tại vùng Đại Hữu, gắn bó với
+                            vùng đất Ninh Bình ngày nay. Đây là quê hương
+                            của người sau này thống nhất đất nước và lập
+                            nên triều đại nhà Đinh.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-timeline-item">
+                    <div class="detail-timeline-year">965–968</div>
+                    <div class="detail-timeline-content">
+                        <h3>Dẹp loạn mười hai sứ quân</h3>
+                        <p>
+                            Trước tình trạng đất nước bị chia cắt, Đinh Bộ Lĩnh
+                            tập hợp lực lượng, lần lượt đánh dẹp hoặc thu phục
+                            các thế lực cát cứ, đưa đất nước trở lại thống nhất.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-timeline-item">
+                    <div class="detail-timeline-year">968</div>
+                    <div class="detail-timeline-content">
+                        <h3>Sáng lập nước Đại Cồ Việt</h3>
+                        <p>
+                            Sau khi thống nhất đất nước, Đinh Bộ Lĩnh lên ngôi
+                            Hoàng đế, đặt quốc hiệu Đại Cồ Việt và chọn Hoa Lư
+                            làm kinh đô.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-timeline-item">
+                    <div class="detail-timeline-year">970</div>
+                    <div class="detail-timeline-content">
+                        <h3>Đặt niên hiệu Thái Bình</h3>
+                        <p>
+                            Triều đình đặt niên hiệu Thái Bình, thể hiện
+                            mong muốn xây dựng một quốc gia độc lập và ổn định.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-timeline-item">
+                    <div class="detail-timeline-year">979</div>
+                    <div class="detail-timeline-content">
+                        <h3>Đinh Tiên Hoàng qua đời</h3>
+                        <p>
+                            Đinh Tiên Hoàng qua đời năm 979. Sự kiện này mở ra
+                            giai đoạn biến động trong triều đình nhà Đinh,
+                            khi người kế vị còn nhỏ.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="detail-architecture">
+
+            <div class="detail-architecture-image">
+                <img src="image/images.jpg" alt="Cảnh quan Cố đô Hoa Lư">
+            </div>
+
+            <div class="detail-architecture-content">
+                <p class="detail-section-label">SỰ NGHIỆP</p>
+
+                <h2>Thống nhất đất nước, xây dựng quốc gia độc lập</h2>
+
+                <p>
+                    Công lao nổi bật của Đinh Tiên Hoàng là chấm dứt tình trạng
+                    cát cứ kéo dài sau thời Ngô, đưa các vùng đất về một mối
+                    và tạo điều kiện cho việc xây dựng chính quyền thống nhất.
+                </p>
+
+                <p>
+                    Việc xưng Hoàng đế, đặt quốc hiệu Đại Cồ Việt và định đô
+                    tại Hoa Lư thể hiện bước phát triển quan trọng trong quá
+                    trình tổ chức và khẳng định vị thế của quốc gia độc lập.
+                </p>
+
+                <p>
+                    Triều đình nhà Đinh từng bước xây dựng bộ máy quản lý,
+                    sắp xếp quan chức và tổ chức lực lượng quân đội, góp phần
+                    đặt nền móng cho nhà nước quân chủ tập quyền ở Việt Nam.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="detail-cultural-section">
+
+            <div class="detail-cultural-content">
+                <p class="detail-section-label">DI SẢN LỊCH SỬ</p>
+
+                <h2>Dấu ấn còn lại tại Cố đô Hoa Lư</h2>
+
+                <p>
+                    Tên tuổi Vua Đinh Tiên Hoàng được lưu giữ qua các di tích,
+                    tư liệu lịch sử và truyền thống tưởng niệm tại vùng đất
+                    Hoa Lư.
+                </p>
+
+                <p>
+                    Đền thờ Vua Đinh Tiên Hoàng là một trong những di tích
+                    tiêu biểu trong quần thể di tích lịch sử Cố đô Hoa Lư,
+                    gắn với việc tưởng niệm vị hoàng đế sáng lập nhà Đinh.
+                </p>
+
+                <p>
+                    Ngày nay, các di tích tại Hoa Lư góp phần lưu giữ ký ức
+                    về thời kỳ hình thành quốc gia Đại Cồ Việt và nhắc nhớ
+                    công lao của những nhân vật lịch sử có vai trò quan trọng
+                    trong tiến trình dựng nước.
+                </p>
+            </div>
+
+        </section>
+
+
+        <section class="detail-navigation">
+
+            <a href="dia-diem.html" class="detail-back-link">
+                <span translate="no" class="notranslate">←</span>
+                <span>
+                    <small>QUAY LẠI</small>
+                    <strong>Danh sách địa điểm</strong>
+                </span>
+            </a>
+            <a href="le-dai-hanh.html" class="detail-next-link">
+                <span>
+                    <small>TIẾP THEO</small>
+                    <strong>Thân thế và sự nghiệp Vua Lê Đại Hành</strong>
+                </span>
+                <span>→</span>
+            </a>
+
+        </section>
+
+
+    </main>
+    <div id="google_translate_element"></div>
+
+    <script src="./js/script.js"></script>
+
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: "vi",
+                includedLanguages: "vi,en,fr,ko,zh-CN",
+                autoDisplay: false
+            }, "google_translate_element");
+        }
+    </script>
+
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+
+</html>

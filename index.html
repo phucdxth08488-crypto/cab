@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Khám phá Cố đô Hoa Lư, kinh đô đầu tiên của nhà nước Đại Cồ Việt, cùng lịch sử, kiến trúc và những di tích tiêu biểu tại Ninh Bình.">
+
+    <title>Cố đô Hoa Lư</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <span translate="no" class="notranslate">HOA LƯ</span>
+        </div>
+
+        <nav class="top-nav">
+            <a href="index.html">Trang chủ</a>
+            <a href="gioi-thieu.html">Giới thiệu</a>
+            <a href="lich-su.html">Lịch sử</a>
+            <a href="dia-diem.html">Khám phá</a>
+        </nav>
+
+        <div class="language-switcher">
+            <button class="language-button" onclick="toggleLanguageMenu()">
+                <span>🌐</span>
+                <span id="currentLanguage">Tiếng Việt</span>
+                <span>⌄</span>
+            </button>
+
+            <div id="languageMenu" class="language-menu">
+                <button onclick="changeLanguage('vi', 'Tiếng Việt')">🇻🇳 Tiếng Việt</button>
+                <button onclick="changeLanguage('en', 'English')">🇬🇧 English</button>
+                <button onclick="changeLanguage('fr', 'Français')">🇫🇷 Français</button>
+                <button onclick="changeLanguage('ko', '한국어')">🇰🇷 한국어</button>
+                <button onclick="changeLanguage('zh-CN', '中文')">🇨🇳 中文</button>
+            </div>
+        </div>
+
+        <div id="google_translate_element"></div>
+
+        <button class="menu-btn" onclick="openMenu()" type="button">☰</button>
+
+        <div id="menu" class="menu">
+            <button class="close-btn" onclick="closeMenu()" type="button">✕</button>
+            <a href="index.html">Trang chủ</a>
+            <a href="gioi-thieu.html">Giới thiệu</a>
+            <a href="lich-su.html">Lịch sử</a>
+            <a href="dia-diem.html">Khám phá</a>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <img src="image/images.jpg" alt="Quần thể di tích Cố đô Hoa Lư">
+
+            <div class="hero-content">
+                <h1>CỐ ĐÔ HOA LƯ</h1>
+                <p>Dấu ấn lịch sử của kinh đô xưa</p>
+                <a href="gioi-thieu.html">KHÁM PHÁ</a>
+            </div>
+        </section>
+        <section class="voice-reader">
+            <div class="voice-reader-info">
+                <span class="voice-reader-icon">♫</span>
+                <div>
+                    <h3>Thuyết minh</h3>
+                    <p id="voiceStatus">Sẵn sàng nghe thuyết minh</p>
+                </div>
+            </div>
+
+            <div class="voice-reader-controls">
+                <button type="button" id="voicePlay">
+                    ▶ Nghe
+                </button>
+
+                <button type="button" id="voicePause">
+                    ⏸ Tạm dừng
+                </button>
+
+                <button type="button" id="voiceStop">
+                    ■ Dừng
+                </button>
+            </div>
+
+            <audio id="voiceAudio" data-audio-prefix="main" preload="metadata">
+            </audio>
+        </section>
+        <section class="intro">
+            <h2>KHÁM PHÁ HOA LƯ</h2>
+
+            <p>
+                Cố đô Hoa Lư thuộc tỉnh Ninh Bình là vùng đất gắn liền
+                với quá trình hình thành và phát triển của nhà nước
+                Đại Cồ Việt vào thế kỷ X. Nơi đây từng là kinh đô dưới
+                triều Đinh và Tiền Lê, đồng thời lưu giữ nhiều dấu tích
+                lịch sử, kiến trúc và văn hóa có giá trị.
+            </p>
+
+            <p>
+                Được bao bọc bởi những dãy núi đá vôi và cảnh quan
+                thiên nhiên đặc trưng, Hoa Lư là nơi giúp du khách
+                tìm hiểu lịch sử dân tộc qua những ngôi đền cổ,
+                di tích khảo cổ và không gian văn hóa truyền thống.
+            </p>
+
+            <a href="gioi-thieu.html">Tìm hiểu về Cố đô Hoa Lư →</a>
+        </section>
+
+        <section class="intro">
+            <h2>DẤU ẤN LỊCH SỬ</h2>
+
+            <p>
+                Năm 968, Đinh Bộ Lĩnh thống nhất đất nước, lên ngôi
+                Hoàng đế và đặt quốc hiệu Đại Cồ Việt, chọn Hoa Lư
+                làm kinh đô. Sau triều Đinh, Hoa Lư tiếp tục giữ vai trò
+                kinh đô dưới triều Tiền Lê.
+            </p>
+
+            <p>
+                Năm 1010, vua Lý Thái Tổ quyết định dời đô ra Thăng Long.
+                Dù không còn là kinh đô, Hoa Lư vẫn lưu giữ những dấu ấn
+                quan trọng về thời kỳ đầu xây dựng nhà nước phong kiến
+                độc lập của Việt Nam.
+            </p>
+
+            <a href="lich-su.html">Khám phá lịch sử Hoa Lư →</a>
+        </section>
+
+        <section class="places">
+            <h2>ĐỊA ĐIỂM NỔI BẬT</h2>
+
+            <div class="place">
+                <img src="image/images.jpg" alt="Đền thờ Vua Đinh Tiên Hoàng">
+
+                <h3>Đền thờ Vua Đinh Tiên Hoàng</h3>
+
+                <p>
+                    Nơi thờ Đinh Tiên Hoàng, vị hoàng đế sáng lập nhà Đinh,
+                    thống nhất đất nước và lập nên nhà nước Đại Cồ Việt
+                    vào năm 968.
+                </p>
+
+                <a href="dinh-tien-hoang.html">Khám phá →</a>
+            </div>
+
+            <div class="place">
+                <img src="image/images.jpg" alt="Đền thờ Vua Lê Đại Hành">
+
+                <h3>Đền thờ Vua Lê Đại Hành</h3>
+
+                <p>
+                    Di tích tưởng niệm Lê Hoàn, vị vua có công lãnh đạo
+                    cuộc kháng chiến chống quân Tống năm 981 và xây dựng
+                    đất nước dưới triều Tiền Lê.
+                </p>
+
+                <a href="le-dai-hanh.html">Khám phá →</a>
+            </div>
+
+            <div class="place">
+                <img src="image/images.jpg" alt="Đền thờ Vua Lê Long Đĩnh">
+
+                <h3>Đền thờ Vua Lê Long Đĩnh</h3>
+
+                <p>
+                    Tìm hiểu về vị vua cuối cùng của triều Tiền Lê,
+                    giai đoạn lịch sử trước khi Lý Công Uẩn lên ngôi
+                    và thành lập triều Lý năm 1009.
+                </p>
+
+                <a href="le-long-dinh.html">Khám phá →</a>
+            </div>
+
+            <div class="place">
+                <img src="image/images.jpg" alt="Đền thờ Thái hậu Dương Vân Nga">
+
+                <h3>Thái hậu Dương Vân Nga</h3>
+
+                <p>
+                    Tìm hiểu về nhân vật lịch sử gắn với hai triều Đinh
+                    và Tiền Lê, cùng sự kiện chuyển giao quyền lực
+                    trong bối cảnh đất nước đứng trước nguy cơ xâm lược.
+                </p>
+
+                <a href="duong-van-nga.html">Khám phá →</a>
+            </div>
+
+            <div class="place">
+                <img src="image/images.jpg" alt="Sơ đồ tham quan đền thờ Vua Đinh Tiên Hoàng">
+
+                <h3>Sơ đồ tham quan đền Vua Đinh</h3>
+
+                <p>
+                    Tìm hiểu cách bố trí các khu vực trong đền thờ,
+                    từ nghi môn, sân đền đến khu vực thờ tự,
+                    giúp bạn thuận tiện hơn khi tham quan di tích.
+                </p>
+
+                <a href="den-vua-dinh.html">Khám phá →</a>
+            </div>
+
+            <div class="place">
+                <img src="image/images.jpg" alt="Sơ đồ tham quan đền thờ Vua Lê Đại Hành">
+
+                <h3>Sơ đồ tham quan đền Vua Lê</h3>
+
+                <p>
+                    Khám phá bố cục khu di tích thờ Vua Lê Đại Hành
+                    và tìm hiểu những điểm đáng chú ý trong không gian
+                    kiến trúc truyền thống tại Cố đô Hoa Lư.
+                </p>
+
+                <a href="den-vua-le.html">Khám phá →</a>
+            </div>
+
+
+            <div class="place">
+                <img src="image/images.jpg" alt="Quần thể di tích lịch sử Cố đô Hoa Lư">
+
+                <h3>Giới thiệu di tích Cố đô Hoa Lư</h3>
+
+                <p>
+                    Khám phá tổng quan về kinh đô xưa của Đại Cồ Việt,
+                    vị trí địa lý, bối cảnh lịch sử và giá trị nổi bật
+                    của quần thể di tích Hoa Lư.
+                </p>
+
+                <a href="di-tich-hoa-lu.html">Khám phá →</a>
+            </div>
+        </section>
+
+        <section class="intro">
+            <h2>GIÁ TRỊ DI SẢN</h2>
+
+            <p>
+                Cố đô Hoa Lư không chỉ có ý nghĩa trong lịch sử dựng nước
+                mà còn là nơi lưu giữ di sản kiến trúc, tín ngưỡng và
+                văn hóa qua nhiều thế hệ. Việc tìm hiểu và bảo tồn
+                quần thể di tích góp phần gìn giữ ký ức lịch sử dân tộc
+                cho các thế hệ hôm nay và mai sau.
+            </p>
+
+            <a href="gioi-thieu.html">Khám phá →</a>
+        </section>
+
+    </main>
+
+    <script src="./js/script.js"></script>
+
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: "vi",
+                includedLanguages: "vi,en,fr,ko,zh-CN",
+                autoDisplay: false
+            }, "google_translate_element");
+        }
+    </script>
+
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+
+</html>

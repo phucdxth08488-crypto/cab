@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Khám phá những địa điểm và di tích tiêu biểu tại Cố đô Hoa Lư.">
+
+    <title>Địa điểm - Cố đô Hoa Lư</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <a href="index.html" class="logo" translate="no">
+            <span class="notranslate">HOA LƯ</span>
+        </a>
+
+        <nav class="top-nav">
+
+            <a href="index.html">
+                Trang chủ
+            </a>
+
+            <a href="gioi-thieu.html">
+                Giới thiệu
+            </a>
+
+            <a href="lich-su.html">
+                Lịch sử
+            </a>
+
+            <a href="dia-diem.html" class="active">
+                Khám phá
+            </a>
+
+        </nav>
+        <button class="menu-btn" onclick="openMenu()">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- BANNER -->
+
+    <section class="place-banner">
+
+        <img src="image/images.jpg" alt="Cố đô Hoa Lư">
+
+        <div class="place-banner-content">
+
+
+            <h1>
+                KHÁM PHÁ DI TÍCH HOA LƯ
+            </h1>
+
+        </div>
+
+    </section>
+<section class="voice-reader">
+    <div class="voice-reader-info">
+        <span class="voice-reader-icon">♫</span>
+        <div>
+            <h3>Thuyết minh</h3>
+            <p id="voiceStatus">Sẵn sàng nghe thuyết minh</p>
+        </div>
+    </div>
+
+    <div class="voice-reader-controls">
+        <button type="button" id="voicePlay">▶ Nghe</button>
+        <button type="button" id="voicePause">⏸ Tạm dừng</button>
+        <button type="button" id="voiceStop">■ Dừng</button>
+    </div>
+
+    <audio
+        id="voiceAudio"
+        data-audio-prefix="kham-pha"
+        preload="metadata">
+    </audio>
+</section>
+    <main>
+
+
+        <!-- GIỚI THIỆU -->
+
+        <section class="place-intro">
+
+            <div class="place-content">
+
+                <p class="place-label">
+                    KHÁM PHÁ HOA LƯ
+                </p>
+
+                <h2>
+                    Những địa điểm mang dấu ấn lịch sử
+                </h2>
+
+                <p>
+                    Cố đô Hoa Lư lưu giữ nhiều công trình,
+                    di tích và dấu tích khảo cổ gắn liền
+                    với lịch sử của Đại Cồ Việt.
+                </p>
+
+                <p>
+                    Từ những ngôi đền thờ các vị vua đầu tiên
+                    đến những dấu tích của kinh đô xưa, mỗi
+                    địa điểm đều góp phần kể lại câu chuyện
+                    về một giai đoạn quan trọng trong lịch sử
+                    Việt Nam.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- DANH SÁCH ĐỊA ĐIỂM -->
+
+        <section class="place-list-section">
+
+            <div class="place-list-title">
+
+                <p class="place-label">
+                    KHÁM PHÁ HOA LƯ
+                </p>
+
+
+
+            </div>
+
+
+            <div class="place-grid">
+
+
+                <!-- 01 -->
+
+                <article class="place-card">
+
+                    <div class="place-card-image">
+
+                        <img src="image/images.jpg" alt="Đền Vua Đinh Tiên Hoàng">
+
+                        <span>01</span>
+
+                    </div>
+
+                    <div class="place-card-content">
+
+                        <p class="place-number">
+                            ĐỊA ĐIỂM 01
+                        </p>
+
+                        <h3>
+                            Đền Vua Đinh Tiên Hoàng
+                        </h3>
+
+                        <p>
+                            Tìm hiểu về đền thờ Vua Đinh Tiên Hoàng,
+                            một trong những công trình tiêu biểu của
+                            khu di tích Cố đô Hoa Lư.
+                        </p>
+
+                        <a href="den-vua-dinh.html">
+                            Xem chi tiết →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- 02 -->
+
+                <article class="place-card">
+
+                    <div class="place-card-image">
+
+                        <img src="image/images.jpg" alt="Đền Vua Lê Đại Hành">
+
+                        <span>02</span>
+
+                    </div>
+
+                    <div class="place-card-content">
+
+                        <p class="place-number">
+                            ĐỊA ĐIỂM 02
+                        </p>
+
+                        <h3>
+                            Đền Vua Lê Đại Hành
+                        </h3>
+
+                        <p>
+                            Khám phá đền thờ Vua Lê Đại Hành và
+                            những giá trị lịch sử, văn hóa gắn liền
+                            với triều đại Tiền Lê.
+                        </p>
+
+                        <a href="den-vua-le.html">
+                            Xem chi tiết →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- 03 -->
+
+                <article class="place-card">
+
+                    <div class="place-card-image">
+
+                        <img src="image/images.jpg" alt="Di tích Cố đô Hoa Lư">
+
+                        <span>03</span>
+
+                    </div>
+
+                    <div class="place-card-content">
+
+                        <p class="place-number">
+                            TÌM HIỂU 03
+                        </p>
+
+                        <h3>
+                            Di tích Cố đô Hoa Lư
+                        </h3>
+
+                        <p>
+                            Tìm hiểu về lịch sử hình thành, giá trị
+                            văn hóa và những dấu tích còn lại của
+                            kinh đô Hoa Lư xưa.
+                        </p>
+
+                        <a href="di-tich-hoa-lu.html">
+                            Xem chi tiết →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- 04 -->
+
+                <article class="place-card">
+
+                    <div class="place-card-image">
+
+                        <img src="image/images.jpg" alt="Vua Đinh Tiên Hoàng">
+
+                        <span>04</span>
+
+                    </div>
+
+                    <div class="place-card-content">
+
+                        <p class="place-number">
+                            NHÂN VẬT 04
+                        </p>
+
+                        <h3>
+                            Thân thế và sự nghiệp Vua Đinh Tiên Hoàng
+                        </h3>
+
+                        <p>
+                            Tìm hiểu về thân thế, quá trình dựng nghiệp,
+                            thống nhất đất nước và xây dựng nhà nước
+                            Đại Cồ Việt của Vua Đinh Tiên Hoàng.
+                        </p>
+
+                        <a href="dinh-tien-hoang.html">
+                            Xem chi tiết →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- 05 -->
+
+                <article class="place-card">
+
+                    <div class="place-card-image">
+
+                        <img src="image/images.jpg" alt="Vua Lê Đại Hành">
+
+                        <span>05</span>
+
+                    </div>
+
+                    <div class="place-card-content">
+
+                        <p class="place-number">
+                            NHÂN VẬT 05
+                        </p>
+
+                        <h3>
+                            Thân thế và sự nghiệp Vua Lê Đại Hành
+                        </h3>
+
+                        <p>
+                            Khám phá cuộc đời, sự nghiệp và những
+                            đóng góp của Vua Lê Đại Hành đối với
+                            đất nước Đại Cồ Việt.
+                        </p>
+
+                        <a href="le-dai-hanh.html">
+                            Xem chi tiết →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- 06 -->
+
+                <article class="place-card">
+
+                    <div class="place-card-image">
+
+                        <img src="image/images.jpg" alt="Vua Lê Long Đĩnh">
+
+                        <span>06</span>
+
+                    </div>
+
+                    <div class="place-card-content">
+
+                        <p class="place-number">
+                            NHÂN VẬT 06
+                        </p>
+
+                        <h3>
+                            Thân thế và sự nghiệp Vua Lê Long Đĩnh
+                        </h3>
+
+                        <p>
+                            Tìm hiểu về cuộc đời, thời gian trị vì
+                            và vai trò của Vua Lê Long Đĩnh trong
+                            lịch sử nhà Tiền Lê.
+                        </p>
+
+                        <a href="le-long-dinh.html">
+                            Xem chi tiết →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- 07 -->
+
+                <article class="place-card">
+
+                    <div class="place-card-image">
+
+                        <img src="image/images.jpg" alt="Thái hậu Dương Vân Nga">
+
+                        <span>07</span>
+
+                    </div>
+
+                    <div class="place-card-content">
+
+                        <p class="place-number">
+                            NHÂN VẬT 07
+                        </p>
+
+                        <h3>
+                            Thái hậu Dương Vân Nga
+                        </h3>
+
+                        <p>
+                            Tìm hiểu về cuộc đời và vai trò của Thái hậu
+                            Dương Vân Nga trong giai đoạn chuyển giao
+                            giữa nhà Đinh và nhà Tiền Lê.
+                        </p>
+
+                        <a href="duong-van-nga.html">
+                            Xem chi tiết →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- GIÁ TRỊ -->
+
+        <section class="place-intro">
+
+            <div class="place-content">
+
+                <p class="place-label">
+                    GIÁ TRỊ DI SẢN
+                </p>
+
+                <h2>
+                    Những dấu tích kể lại lịch sử
+                </h2>
+
+                <p>
+                    Các công trình kiến trúc, đền thờ và dấu tích
+                    khảo cổ tại Hoa Lư tạo nên một không gian
+                    lịch sử đặc biệt.
+                </p>
+
+                <p>
+                    Mỗi địa điểm là một phần của câu chuyện về
+                    quá trình hình thành nhà nước Đại Cồ Việt,
+                    các triều đại Đinh – Tiền Lê và sự chuyển
+                    giao sang thời Lý.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- QUAY LẠI -->
+
+        <section class="back-home">
+
+            <a href="index.html">
+                ← QUAY LẠI TRANG CHỦ
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- MENU MOBILE -->
+
+    <div id="menu" class="menu">
+
+        <button class="close-btn" onclick="closeMenu()">
+            ✕
+        </button>
+
+        <a href="index.html">
+            Trang chủ
+        </a>
+
+        <a href="gioi-thieu.html">
+            Giới thiệu
+        </a>
+
+        <a href="lich-su.html">
+            Lịch sử
+        </a>
+
+        <a href="dia-diem.html">
+            Khám phá
+        </a>
+
+    </div>
+
+
+  <script src="./js/script.js"></script>
+
+<script>
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: "vi",
+            includedLanguages: "vi,en,fr,ko,zh-CN",
+            autoDisplay: false
+        }, "google_translate_element");
+    }
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+</body>
+
+</html>
