@@ -2201,3 +2201,98 @@ a:active {
         object-fit: cover;
     }
 }
+
+/* =====================================
+   GIAO DIỆN ĐỎ ĐUN – CỐ ĐÔ HOA LƯ
+===================================== */
+
+/* Nền toàn website */
+body {
+    background-color: #350B11;
+}
+
+/* Header */
+.header {
+    background: rgba(53, 11, 17, 0.96);
+}
+
+/* Menu điện thoại */
+.menu {
+    background: #350B11;
+}
+
+/* Các phần nội dung */
+.intro,
+.about-section,
+.history-intro,
+.history-period,
+.place-intro,
+.detail-introduction {
+    background: #4A1018;
+}
+
+/* Các khu vực nền tối xen kẽ */
+.places,
+.about-dark,
+.about-value,
+.history-period.dark,
+.history-today,
+.place-list-section,
+.detail-history-section,
+.detail-cultural-section {
+    background: #350B11;
+}
+
+/* Các khu vực nền đỏ đun sáng */
+.about-places,
+.timeline-section {
+    background: #5A1822;
+}
+
+/* Thẻ địa điểm */
+.place-card,
+.about-place {
+    background: #4A1018;
+    border-color: #71313A;
+}
+
+/* Banner và ảnh */
+.hero::after,
+.page-banner::after,
+.history-banner::after,
+.place-banner::after {
+    background: linear-gradient(
+        to bottom,
+        rgba(53, 11, 17, 0.15),
+        rgba(53, 11, 17, 0.85)
+    );
+}
+
+/* Khu vực nghe thuyết minh */
+.voice-reader {
+    background: #4A1018;
+    border-color: #71313A;
+}
+
+/* Thanh điều hướng cuối trang */
+.detail-navigation {
+    background: #4A1018;
+    border-color: #71313A;
+}
+
+/* Menu ngôn ngữ */
+.language-menu {
+    background: #4A1018;
+    border-color: #8A5A50;
+}
+
+/* Nút và đường viền */
+.language-button {
+    border-color: #8A5A50;
+}
+
+/* Đường phân cách */
+.detail-breadcrumb {
+    background: #350B11;
+    border-color: #71313A;
+}
