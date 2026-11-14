@@ -13,7 +13,7 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #111111;
+    background-color: #350B11;
     color: #ffffff;
     line-height: 1.6;
 }
@@ -167,7 +167,7 @@ a {
 .hero-content a:hover {
     background: #e3c58a;
     border-color: #e3c58a;
-    color: #111111;
+    color: #350B11;
 }
 
 /* =========================
@@ -176,7 +176,7 @@ a {
 .intro {
     padding: 85px 25px;
     text-align: center;
-    background: #171717;
+    background: #4A1018;
 }
 
 .intro h2,
@@ -212,7 +212,7 @@ a {
 ========================= */
 .places {
     padding: 70px 20px;
-    background: #101010;
+    background: #3B0C13;
 }
 
 .places h2 {
@@ -265,7 +265,7 @@ a {
     overflow-y: auto;
 
     padding: 25px;
-    background: #171717;
+    background: #4A1018;
 
     z-index: 2000;
 
@@ -304,7 +304,7 @@ a {
     display: block;
     padding: 16px 0;
 
-    border-bottom: 1px solid #333333;
+    border-bottom: 1px solid #71313A;
 
     color: #ffffff;
     font-size: 16px;
@@ -492,11 +492,11 @@ a {
 .about-section {
     padding: 80px 25px;
 
-    background: #171717;
+    background: #4A1018;
 }
 
 .about-dark {
-    background: #101010;
+    background: #3B0C13;
 }
 
 .about-content {
@@ -538,7 +538,7 @@ a {
 .about-places {
     padding: 80px 20px;
 
-    background: #151515;
+    background: #421019;
 }
 
 .about-title {
@@ -559,7 +559,7 @@ a {
 .about-place {
     margin-bottom: 55px;
 
-    background: #1d1d1d;
+    background: #561923;
 }
 
 .about-place img {
@@ -602,7 +602,7 @@ a {
 ========================= */
 
 .about-value {
-    background: #111111;
+    background: #350B11;
 }
 
 
@@ -615,7 +615,7 @@ a {
 
     text-align: center;
 
-    background: #101010;
+    background: #3B0C13;
 }
 
 .back-home a {
@@ -635,7 +635,7 @@ a {
 
 .back-home a:hover {
     background: #e3c58a;
-    color: #111111;
+    color: #350B11;
 }
 
 
@@ -815,11 +815,11 @@ a {
 .history-today {
     padding: 80px 25px;
 
-    background: #171717;
+    background: #4A1018;
 }
 
 .history-period.dark {
-    background: #101010;
+    background: #3B0C13;
 }
 
 .history-content {
@@ -865,7 +865,7 @@ a {
 .timeline-section {
     padding: 80px 20px;
 
-    background: #151515;
+    background: #421019;
 }
 
 .timeline-title {
@@ -931,7 +931,7 @@ a {
 
     border-radius: 50%;
 
-    background: #151515;
+    background: #421019;
 
     color: #e3c58a;
 
@@ -964,7 +964,7 @@ a {
 ========================= */
 
 .history-today {
-    background: #111111;
+    background: #350B11;
 }
 
 
@@ -1117,7 +1117,7 @@ a {
 
 .place-intro {
     padding: 80px 25px;
-    background: #171717;
+    background: #4A1018;
 }
 
 .place-content {
@@ -1152,7 +1152,7 @@ a {
 
 .place-list-section {
     padding: 80px 20px;
-    background: #101010;
+    background: #3B0C13;
 }
 
 .place-list-title {
@@ -1187,9 +1187,9 @@ a {
 .place-card {
     overflow: hidden;
 
-    background: #191919;
+    background: #51151F;
 
-    border: 1px solid #292929;
+    border: 1px solid #71313A;
 
     transition:
         transform 0.3s ease,
@@ -1324,7 +1324,7 @@ a {
 
     text-align: center;
 
-    background: #171717;
+    background: #4A1018;
 }
 
 .back-home a {
@@ -1467,7 +1467,7 @@ a {
     height: 75vh;
     min-height: 500px;
     overflow: hidden;
-    background: #101010;
+    background: #3B0C13;
 }
 
 .detail-hero > img {
@@ -1537,7 +1537,7 @@ a {
 
 .detail-discover:hover {
     background: #e3c58a;
-    color: #111111;
+    color: #350B11;
 }
 
 
@@ -1551,8 +1551,8 @@ a {
     align-items: center;
     gap: 12px;
     padding: 22px 7%;
-    background: #111111;
-    border-bottom: 1px solid #292929;
+    background: #350B11;
+    border-bottom: 1px solid #71313A;
     color: #999999;
     font-size: 12px;
 }
@@ -1574,7 +1574,7 @@ a {
 .detail-introduction {
     display: grid;
     grid-template-columns: 1fr;
-    background: #171717;
+    background: #4A1018;
 }
 
 .detail-introduction-image {
@@ -1630,7 +1630,7 @@ a {
 
 .detail-history-section {
     padding: 75px 25px;
-    background: #101010;
+    background: #3B0C13;
 }
 
 .detail-history-heading {
@@ -1715,7 +1715,7 @@ a {
 .detail-architecture {
     display: flex;
     flex-direction: column;
-    background: #191919;
+    background: #51151F;
 }
 
 .detail-architecture-content {
@@ -1742,7 +1742,7 @@ a {
 
 .detail-cultural-section {
     padding: 75px 25px;
-    background: #111111;
+    background: #350B11;
 }
 
 .detail-cultural-content {
@@ -1764,8 +1764,8 @@ a {
     flex-direction: column;
     gap: 25px;
     padding: 35px 25px;
-    background: #191919;
-    border-top: 1px solid #292929;
+    background: #51151F;
+    border-top: 1px solid #71313A;
 }
 
 .detail-back-link,
@@ -1975,7 +1975,7 @@ a {
 }
 
 .language-button:hover {
-    background: #29291f;
+    background: #5A1822;
     border-color: #b58b45;
 }
 
@@ -1986,7 +1986,7 @@ a {
     right: 0;
     width: 170px;
     padding: 6px;
-    background: #20221d;
+    background: #4A1018;
     border: 1px solid #76613c;
     border-radius: 7px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
@@ -2010,7 +2010,7 @@ a {
 }
 
 .language-menu button:hover {
-    background: #39372b;
+    background: #71313A;
     color: #fff;
 }
 
@@ -2200,99 +2200,4 @@ a:active {
         height: 27px !important;
         object-fit: cover;
     }
-}
-
-/* =====================================
-   GIAO DIỆN ĐỎ ĐUN – CỐ ĐÔ HOA LƯ
-===================================== */
-
-/* Nền toàn website */
-body {
-    background-color: #350B11;
-}
-
-/* Header */
-.header {
-    background: rgba(53, 11, 17, 0.96);
-}
-
-/* Menu điện thoại */
-.menu {
-    background: #350B11;
-}
-
-/* Các phần nội dung */
-.intro,
-.about-section,
-.history-intro,
-.history-period,
-.place-intro,
-.detail-introduction {
-    background: #4A1018;
-}
-
-/* Các khu vực nền tối xen kẽ */
-.places,
-.about-dark,
-.about-value,
-.history-period.dark,
-.history-today,
-.place-list-section,
-.detail-history-section,
-.detail-cultural-section {
-    background: #350B11;
-}
-
-/* Các khu vực nền đỏ đun sáng */
-.about-places,
-.timeline-section {
-    background: #5A1822;
-}
-
-/* Thẻ địa điểm */
-.place-card,
-.about-place {
-    background: #4A1018;
-    border-color: #71313A;
-}
-
-/* Banner và ảnh */
-.hero::after,
-.page-banner::after,
-.history-banner::after,
-.place-banner::after {
-    background: linear-gradient(
-        to bottom,
-        rgba(53, 11, 17, 0.15),
-        rgba(53, 11, 17, 0.85)
-    );
-}
-
-/* Khu vực nghe thuyết minh */
-.voice-reader {
-    background: #4A1018;
-    border-color: #71313A;
-}
-
-/* Thanh điều hướng cuối trang */
-.detail-navigation {
-    background: #4A1018;
-    border-color: #71313A;
-}
-
-/* Menu ngôn ngữ */
-.language-menu {
-    background: #4A1018;
-    border-color: #8A5A50;
-}
-
-/* Nút và đường viền */
-.language-button {
-    border-color: #8A5A50;
-}
-
-/* Đường phân cách */
-.detail-breadcrumb {
-    background: #350B11;
-    border-color: #71313A;
 }
