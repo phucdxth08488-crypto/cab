@@ -1,0 +1,10 @@
+
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "cab",
+  "compatibility_date": "2026-11-14",
+  "assets": {
+    "directory": ".",
+    "binding": "ASSETS"
+  }
+}
